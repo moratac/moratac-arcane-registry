@@ -247,3 +247,14 @@ Experimental Caddy UI with frontend and backend. It is intended to manage an exi
 Experimental pure static SPA for Caddy Admin API. Best used behind Caddy with HTTPS and BasicAuth.
 
 Production note: keep Caddy Admin API private. Do not expose port 2019 publicly.
+
+
+## CaddyManager rhad00
+
+Experimental Alpha reverse proxy manager built on Caddy Server.
+
+- Source: https://github.com/rhad00/CaddyManager
+- First deploy builds from GitHub source and may take longer.
+- Default login: `admin@caddymanager.local` / `changeme123`
+- Change the default password immediately.
+- Ports are offset to avoid conflict with existing Caddy Server.

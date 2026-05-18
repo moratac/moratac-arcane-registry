@@ -1,0 +1,74 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/caddymanager-rhad00.svg
+
+services:
+  caddy:
+    build:
+      context: https://github.com/rhad00/CaddyManager.git#main:caddy
+      args:
+        CADDY_VERSION: ${CADDY_VERSION:-2.10.2}
+    restart: unless-stopped
+    ports:
+      - "${CADDYMANAGER_HTTP_PORT:-8090}:80"
+      - "${CADDYMANAGER_HTTPS_PORT:-8445}:443"
+    environment:
+      CF_API_TOKEN: ${CF_API_TOKEN:-}
+    volumes:
+      - caddymanager-caddyfile:/etc/caddy
+      - caddymanager-caddy-data:/data
+      - caddymanager-caddy-config:/config
+    networks:
+      caddymanager:
+
+  backend:
+    build:
+      context: https://github.com/rhad00/CaddyManager.git#main:backend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DB_TYPE: sqlite
+      SQLITE_PATH: /app/data/caddymanager.db
+      CADDY_API_URL: http://caddy:2019
+      CF_API_TOKEN: ${CF_API_TOKEN:-}
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-24h}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@caddymanager.local}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-changeme123}
+      ENABLE_DOCKER_DISCOVERY: ${ENABLE_DOCKER_DISCOVERY:-false}
+      DOCKER_LABEL_PREFIX: ${DOCKER_LABEL_PREFIX:-caddymanager}
+      AUTO_REMOVE_STOPPED: ${AUTO_REMOVE_STOPPED:-false}
+    volumes:
+      - caddymanager-backend-data:/app/data
+      - caddymanager-backend-logs:/app/logs
+      - caddymanager-backend-metrics:/app/metrics
+      - caddymanager-backend-backups:/app/backups
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      caddymanager:
+
+  frontend:
+    build:
+      context: https://github.com/rhad00/CaddyManager.git#main:frontend
+      args:
+        VITE_API_URL: /api
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "${CADDYMANAGER_UI_PORT:-9890}:80"
+    networks:
+      caddymanager:
+
+networks:
+  caddymanager:
+
+volumes:
+  caddymanager-caddyfile:
+  caddymanager-caddy-data:
+  caddymanager-caddy-config:
+  caddymanager-backend-data:
+  caddymanager-backend-logs:
+  caddymanager-backend-metrics:
+  caddymanager-backend-backups:

@@ -2,7 +2,7 @@
   "$schema": "https://registry.getarcane.app/schema.json",
   "name": "Moratac Arcane Registry",
   "description": "Curated Docker Compose templates for Arcane.",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "author": "moratac",
   "url": "https://github.com/moratac/moratac-arcane-registry",
   "templates": [
@@ -313,6 +313,25 @@
         "caddy",
         "ui",
         "experimental"
+      ]
+    },
+    {
+      "id": "caddymanager-rhad00",
+      "name": "CaddyManager rhad00",
+      "description": "Alpha reverse proxy manager built on Caddy Server. Experimental Git-build template; use with caution.",
+      "version": "2.1.6",
+      "author": "moratac",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddymanager-rhad00/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddymanager-rhad00/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/caddymanager-rhad00",
+      "content_hash": "356d77f875cac938bdce6c373d03bb77916de8bca4dd00ba349084bb6a5f894a",
+      "tags": [
+        "networking",
+        "reverse-proxy",
+        "caddy",
+        "ui",
+        "experimental",
+        "git-build"
       ]
     },
     {

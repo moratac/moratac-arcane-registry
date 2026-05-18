@@ -1,0 +1,22 @@
+{
+  "id": "caddymanager-rhad00",
+  "name": "CaddyManager rhad00",
+  "description": "Alpha reverse proxy manager built on Caddy Server. Experimental Git-build template; use with caution.",
+  "category": "Networking & Reverse Proxy",
+  "version": "2.1.6",
+  "author": "moratac",
+  "tags": [
+    "networking",
+    "reverse-proxy",
+    "caddy",
+    "ui",
+    "experimental",
+    "git-build"
+  ],
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "source": "https://github.com/rhad00/CaddyManager"
+}
