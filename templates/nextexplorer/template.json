@@ -1,0 +1,26 @@
+{
+  "id": "nextexplorer",
+  "name": "NextExplorer",
+  "description": "Native file browser for mounted NAS paths.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Storage & Files",
+  "target_vm": "VM101",
+  "tags": [
+    "files",
+    "nas",
+    "browser"
+  ],
+  "ports": [
+    "8098"
+  ],
+  "image": "ghcr.io/nxzai/nextexplorer:latest",
+  "maturity": "starter",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": true,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

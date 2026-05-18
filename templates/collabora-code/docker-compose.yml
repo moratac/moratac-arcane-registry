@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/collabora-code.svg
+
+services:
+  collabora-code:
+    image: collabora/code:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${COLLABORA_CODE_PORT_1:-9980}:9980"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - collabora-code-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  collabora-code-config:

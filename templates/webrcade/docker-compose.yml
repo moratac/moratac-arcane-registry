@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/webrcade.svg
+
+# IMPORTANT: Starter template for webRcade.
+# Review official production compose before deploying.
+services:
+  webrcade:
+    image: nginx:alpine
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${WEBRCADE_PORT_1:-8080}:8080"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - webrcade-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  webrcade-data:

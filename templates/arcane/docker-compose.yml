@@ -1,0 +1,20 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/arcane.svg
+
+services:
+  arcane:
+    image: ghcr.io/getarcaneapp/arcane:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${ARCANE_PORT:-3552}:3552"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - arcane-data:/app/data
+    environment:
+      APP_URL: ${APP_URL:-http://localhost:3552}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      JWT_SECRET: ${JWT_SECRET}
+      OIDC_ENABLED: ${OIDC_ENABLED:-false}
+volumes:
+  arcane-data:

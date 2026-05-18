@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/odoo.svg
+
+services:
+  odoo:
+    image: odoo:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${ODOO_PORT_1:-8069}:8069"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - odoo-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  odoo-config:

@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/grafana.svg
+
+services:
+  grafana:
+    image: grafana/grafana:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${GRAFANA_PORT_1:-3003}:3003"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - grafana-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  grafana-config:

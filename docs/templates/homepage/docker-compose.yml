@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/homepage.svg
+
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${HOMEPAGE_PORT_1:-3000}:3000"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - homepage-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  homepage-config:

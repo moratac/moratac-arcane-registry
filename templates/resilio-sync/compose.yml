@@ -1,0 +1,20 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/resilio-sync.svg
+
+services:
+  resilio-sync:
+    image: lscr.io/linuxserver/resilio-sync:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${RESILIO_SYNC_PORT_1:-8888}:8888"
+      - "${RESILIO_SYNC_PORT_2:-55555}:55555"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - resilio-sync-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  resilio-sync-config:

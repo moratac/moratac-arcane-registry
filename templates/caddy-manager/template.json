@@ -1,0 +1,26 @@
+{
+  "id": "caddy-manager",
+  "name": "Caddy Manager",
+  "description": "UI for managing Caddy configuration.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Networking & Reverse Proxy",
+  "target_vm": "VM101",
+  "tags": [
+    "proxy",
+    "caddy",
+    "ui"
+  ],
+  "ports": [
+    "8099"
+  ],
+  "image": "caddymanager/caddymanager-frontend:latest",
+  "maturity": "starter",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

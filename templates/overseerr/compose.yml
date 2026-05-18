@@ -1,0 +1,20 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/overseerr.svg
+
+services:
+  overseerr:
+    image: lscr.io/linuxserver/overseerr:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${OVERSEERR_PORT_1:-5056}:5056"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - overseerr-config:/config
+      - ${MEDIA_PATH:-./media}:/media
+
+volumes:
+  overseerr-config:

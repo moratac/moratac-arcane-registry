@@ -1,0 +1,28 @@
+{
+  "id": "jellyseerr",
+  "name": "Jellyseerr",
+  "category": "Download & ARR",
+  "target_vm": "VM102",
+  "ports": [
+    "5055"
+  ],
+  "image": "fallenbagel/jellyseerr:latest",
+  "description": "Media request portal for Jellyfin, Sonarr, and Radarr.",
+  "tags": [
+    "jellyfin",
+    "requests",
+    "arr",
+    "media"
+  ],
+  "maturity": "ready",
+  "complexity_note": "Good one-click candidate; connect to Jellyfin, Sonarr, and Radarr after deployment.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

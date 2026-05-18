@@ -1,0 +1,9 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/cloudflare-tunnel.svg
+
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    pull_policy: always
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN}

@@ -1,0 +1,18 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/unmanic.svg
+
+services:
+  unmanic:
+    image: josh5/unmanic:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${UNMANIC_PORT_1:-8888}:8888"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - unmanic-config:/config
+      - ${MEDIA_PATH:-./media}:/media
+
+volumes:
+  unmanic-config:

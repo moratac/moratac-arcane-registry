@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/filebrowser.svg
+
+services:
+  filebrowser:
+    image: filebrowser/filebrowser:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${FILEBROWSER_PORT_1:-8082}:8082"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - filebrowser-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  filebrowser-config:

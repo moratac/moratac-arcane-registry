@@ -1,0 +1,26 @@
+{
+  "id": "univer",
+  "name": "Univer",
+  "description": "Open-source office/collaboration suite. Verify upstream image for your region.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Office & Collaboration",
+  "target_vm": "VM104",
+  "tags": [
+    "office",
+    "spreadsheet",
+    "collaboration"
+  ],
+  "ports": [
+    "3010"
+  ],
+  "image": "univer-acr-registry.cn-shenzhen.cr.aliyuncs.com/release/univer:latest",
+  "maturity": "review",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

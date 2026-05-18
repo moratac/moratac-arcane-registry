@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/lm-studio.svg
+
+# IMPORTANT: Starter template for LM Studio.
+# Review official production compose before deploying.
+services:
+  lm-studio:
+    image: placeholder/manual
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${LM_STUDIO_PORT_1:-1234}:1234"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - lm-studio-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  lm-studio-data:

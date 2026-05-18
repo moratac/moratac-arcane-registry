@@ -1,0 +1,26 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/gitlab-ce.svg
+
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    pull_policy: always
+    restart: unless-stopped
+    hostname: ${GITLAB_HOSTNAME:-gitlab.local}
+    ports:
+      - "${GITLAB_HTTP_PORT:-8929}:80"
+      - "${GITLAB_SSH_PORT:-2224}:22"
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url '${GITLAB_EXTERNAL_URL:-http://localhost:8929}'
+        gitlab_rails['gitlab_shell_ssh_port'] = ${GITLAB_SSH_PORT:-2224}
+    volumes:
+      - gitlab-config:/etc/gitlab
+      - gitlab-logs:/var/log/gitlab
+      - gitlab-data:/var/opt/gitlab
+    shm_size: "256m"
+
+volumes:
+  gitlab-config:
+  gitlab-logs:
+  gitlab-data:

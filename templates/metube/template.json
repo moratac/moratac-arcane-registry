@@ -1,0 +1,26 @@
+{
+  "id": "metube",
+  "name": "MeTube",
+  "description": "Web UI for yt-dlp video downloads.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Download & ARR",
+  "target_vm": "VM102",
+  "tags": [
+    "youtube",
+    "download",
+    "yt-dlp"
+  ],
+  "ports": [
+    "8084"
+  ],
+  "image": "ghcr.io/alexta69/metube:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

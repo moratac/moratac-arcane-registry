@@ -1,0 +1,18 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/sftpgo.svg
+
+services:
+  sftpgo:
+    image: drakkan/sftpgo:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${SFTPGO_PORT_1:-8080}:8080"
+      - "${SFTPGO_PORT_2:-2022}:2022"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - sftpgo-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  sftpgo-config:

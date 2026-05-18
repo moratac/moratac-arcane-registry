@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/alist.svg
+
+services:
+  alist:
+    image: xhofe/alist:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${ALIST_PORT_1:-5244}:5244"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - alist-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  alist-config:

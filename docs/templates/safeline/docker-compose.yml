@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/safeline.svg
+
+# IMPORTANT: Starter template for Safeline WAF.
+# Review official production compose before deploying.
+services:
+  safeline:
+    image: chaitin/safeline-mgt:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${SAFELINE_PORT_1:-9445}:9445"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - safeline-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  safeline-data:

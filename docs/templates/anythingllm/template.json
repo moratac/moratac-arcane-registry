@@ -1,0 +1,26 @@
+{
+  "id": "anythingllm",
+  "name": "AnythingLLM",
+  "description": "Private RAG and AI workspace.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "AI & Automation",
+  "target_vm": "VM103",
+  "tags": [
+    "ai",
+    "rag",
+    "llm"
+  ],
+  "ports": [
+    "3002"
+  ],
+  "image": "mintplexlabs/anythingllm:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

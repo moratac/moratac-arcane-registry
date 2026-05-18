@@ -1,0 +1,27 @@
+{
+  "id": "qdrant",
+  "name": "Qdrant",
+  "description": "Vector database for AI/RAG.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Search & RAG",
+  "target_vm": "VM103",
+  "tags": [
+    "vector-db",
+    "rag",
+    "ai"
+  ],
+  "ports": [
+    "6333",
+    "6334"
+  ],
+  "image": "qdrant/qdrant:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

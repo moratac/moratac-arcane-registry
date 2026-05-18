@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/netdata.svg
+
+services:
+  netdata:
+    image: netdata/netdata:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${NETDATA_PORT_1:-19999}:19999"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - netdata-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  netdata-config:

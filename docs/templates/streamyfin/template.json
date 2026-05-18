@@ -1,0 +1,26 @@
+{
+  "id": "streamyfin",
+  "name": "Streamyfin",
+  "description": "Enhanced Jellyfin client ecosystem. Usually client-side/mobile; template is a placeholder/link entry.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Media",
+  "target_vm": "VM102",
+  "tags": [
+    "jellyfin",
+    "client",
+    "media"
+  ],
+  "ports": [
+    "8097"
+  ],
+  "image": "placeholder/manual",
+  "maturity": "external",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

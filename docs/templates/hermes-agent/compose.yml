@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/hermes-agent.svg
+
+# IMPORTANT: Starter template for Hermes Agent.
+# Review official production compose before deploying.
+services:
+  hermes-agent:
+    image: ghcr.io/nousresearch/hermes-agent:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${HERMES_AGENT_PORT_1:-9120}:9120"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - hermes-agent-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  hermes-agent-data:

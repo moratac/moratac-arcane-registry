@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/gameyfin.svg
+
+services:
+  gameyfin:
+    image: ghcr.io/gameyfin/gameyfin:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${GAMEYFIN_PORT_1:-8080}:8080"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - gameyfin-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  gameyfin-config:

@@ -1,0 +1,26 @@
+{
+  "id": "gospeed",
+  "name": "GoSpeed",
+  "description": "Network speed test / file transfer helper.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Monitoring",
+  "target_vm": "VM101/VM102",
+  "tags": [
+    "network",
+    "speedtest",
+    "go"
+  ],
+  "ports": [
+    "5443"
+  ],
+  "image": "sunny0826/gospeed:latest",
+  "maturity": "starter",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

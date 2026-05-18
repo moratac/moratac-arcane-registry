@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/chrome-browser.svg
+
+services:
+  chrome-browser:
+    image: lscr.io/linuxserver/chromium:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${CHROME_BROWSER_PORT_1:-3005}:3005"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - chrome-browser-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  chrome-browser-config:

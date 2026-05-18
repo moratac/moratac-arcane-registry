@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/aria2-pro.svg
+
+services:
+  aria2-pro:
+    image: p3terx/aria2-pro:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${ARIA2_PRO_PORT_1:-6800}:6800"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - aria2-pro-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  aria2-pro-config:

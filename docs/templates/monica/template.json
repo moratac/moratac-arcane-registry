@@ -1,0 +1,25 @@
+{
+  "id": "monica",
+  "name": "Monica",
+  "description": "Personal CRM.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Home & Family",
+  "target_vm": "VM104",
+  "tags": [
+    "crm",
+    "personal"
+  ],
+  "ports": [
+    "8088"
+  ],
+  "image": "monica:latest",
+  "maturity": "starter",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

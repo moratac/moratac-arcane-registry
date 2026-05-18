@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/immich.svg
+
+# IMPORTANT: Starter template for Immich.
+# Review official production compose before deploying.
+services:
+  immich:
+    image: ghcr.io/immich-app/immich-server:release
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${IMMICH_PORT_1:-2283}:2283"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - immich-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  immich-data:

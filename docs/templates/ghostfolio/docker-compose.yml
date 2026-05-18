@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/ghostfolio.svg
+
+services:
+  ghostfolio:
+    image: ghostfolio/ghostfolio:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${GHOSTFOLIO_PORT_1:-3333}:3333"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ghostfolio-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  ghostfolio-config:

@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/libretv.svg
+
+services:
+  libretv:
+    image: bestzwei/libretv:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${LIBRETV_PORT_1:-8899}:8899"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - libretv-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  libretv-config:

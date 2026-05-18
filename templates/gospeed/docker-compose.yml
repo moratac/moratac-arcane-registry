@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/gospeed.svg
+
+services:
+  gospeed:
+    image: sunny0826/gospeed:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${GOSPEED_PORT_1:-5443}:5443"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - gospeed-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  gospeed-config:

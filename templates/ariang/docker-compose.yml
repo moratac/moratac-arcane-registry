@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/ariang.svg
+
+services:
+  ariang:
+    image: p3terx/ariang:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${ARIANG_PORT_1:-6880}:6880"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ariang-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  ariang-config:

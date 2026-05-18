@@ -1,0 +1,20 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/lancache.svg
+
+# IMPORTANT: Starter template for LanCache.
+# Review official production compose before deploying.
+services:
+  lancache:
+    image: lancachenet/monolithic:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${LANCACHE_PORT_1:-80}:80"
+      - "${LANCACHE_PORT_2:-443}:443"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - lancache-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  lancache-data:

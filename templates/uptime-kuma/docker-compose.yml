@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/uptime-kuma.svg
+
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${UPTIME_KUMA_PORT_1:-8125}:8125"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - uptime-kuma-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  uptime-kuma-config:

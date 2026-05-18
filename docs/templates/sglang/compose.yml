@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/sglang.svg
+
+services:
+  sglang:
+    image: lmsysorg/sglang:latest
+    pull_policy: always
+    restart: unless-stopped
+    ipc: host
+    ports:
+      - "${SGLANG_PORT:-30000}:30000"
+    volumes:
+      - ./models:/models
+    environment:
+      TZ: ${TZ:-UTC}
+      HF_TOKEN: ${HF_TOKEN:-}
+    # Uncomment for NVIDIA GPU hosts.

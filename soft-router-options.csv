@@ -1,0 +1,5 @@
+Name,Use,Deploy as,Recommendation,Source
+OPNsense,Main production firewall/gateway,Proxmox VM,Recommended first,https://opnsense.org/
+OpenWrt,Lightweight router/side-router,Proxmox VM or hardware router,Recommended for lab/side-router,https://openwrt.org/
+iStoreOS,OpenWrt-based app-router,Proxmox VM or hardware router,Recommended for friendly OpenWrt UI,https://www.istoreos.com/
+pfSense,Classic firewall/router OS,Proxmox VM or appliance,Stable but secondary,https://www.pfsense.org/

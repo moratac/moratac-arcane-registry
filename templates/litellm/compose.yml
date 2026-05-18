@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/litellm.svg
+
+services:
+  litellm:
+    image: ghcr.io/berriai/litellm:main-latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${LITELLM_PORT_1:-4000}:4000"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - litellm-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  litellm-config:

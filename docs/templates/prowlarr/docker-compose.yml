@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/prowlarr.svg
+
+services:
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${PROWLARR_PORT_1:-9696}:9696"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - prowlarr-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  prowlarr-config:

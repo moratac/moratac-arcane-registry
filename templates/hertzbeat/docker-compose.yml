@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/hertzbeat.svg
+
+services:
+  hertzbeat:
+    image: apache/hertzbeat:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${HERTZBEAT_PORT_1:-1157}:1157"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - hertzbeat-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  hertzbeat-config:

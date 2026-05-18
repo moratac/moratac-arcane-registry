@@ -1,0 +1,1521 @@
+{
+  "$schema": "https://registry.getarcane.app/schema.json",
+  "name": "Moratac Arcane Registry",
+  "description": "Curated Docker Compose templates for Arcane.",
+  "version": "2.1.1",
+  "author": "moratac",
+  "url": "https://github.com/moratac/moratac-arcane-registry",
+  "templates": [
+    {
+      "id": "2fauth",
+      "name": "2FAuth",
+      "description": "Self-hosted TOTP/2FA account manager.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/2fauth/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/2fauth/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/2fauth",
+      "content_hash": "72baefb1fd0a53c91e941c7e2ae4e1e5312dc39c139be78a8ce783371b8ecb42",
+      "tags": [
+        "2fa",
+        "totp",
+        "security"
+      ]
+    },
+    {
+      "id": "actual-budget",
+      "name": "Actual Budget",
+      "description": "Self-hosted personal budgeting app.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/actual-budget/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/actual-budget/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/actual-budget",
+      "content_hash": "06cf4c88a174ca0b8bd7a4d2a1c55f72f86edb266211e2ba6c95fba7d00bc610",
+      "tags": [
+        "finance",
+        "budget"
+      ]
+    },
+    {
+      "id": "alist",
+      "name": "AList",
+      "description": "File list and WebDAV gateway for cloud drives and local storage.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/alist/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/alist/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/alist",
+      "content_hash": "f120c07539045a34bfce778a6f5f7974e69ffe8a9a78bf6409c6034524b97235",
+      "tags": [
+        "files",
+        "webdav",
+        "cloud-drive"
+      ]
+    },
+    {
+      "id": "anythingllm",
+      "name": "AnythingLLM",
+      "description": "Private RAG and AI workspace.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/anythingllm/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/anythingllm/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/anythingllm",
+      "content_hash": "ee75f3db4a7ce8f77cc68d7c2891fb23c30b1949d2d13c220c83ab2f379e6746",
+      "tags": [
+        "ai",
+        "rag",
+        "llm"
+      ]
+    },
+    {
+      "id": "arcane",
+      "name": "Arcane",
+      "description": "Modern Docker management control plane.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/arcane/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/arcane/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/arcane",
+      "content_hash": "8bb413ddc5a72d943331ebacef1f3cb2045fa7bc951ec65fa9a1a2cc29cad8db",
+      "tags": [
+        "platform",
+        "docker",
+        "control-plane",
+        "go"
+      ]
+    },
+    {
+      "id": "arcane-agent",
+      "name": "Arcane Agent",
+      "description": "Arcane remote Docker host agent. Verify official pairing flow.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/arcane-agent/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/arcane-agent/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/arcane-agent",
+      "content_hash": "8123904ba910bb92f549a19838f512da13314f0cfa8aab40bd507385c12ad5f1",
+      "tags": [
+        "docker",
+        "agent",
+        "control-plane"
+      ]
+    },
+    {
+      "id": "aria2-pro",
+      "name": "Aria2 Pro",
+      "description": "Aria2 downloader with RPC support.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/aria2-pro/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/aria2-pro/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/aria2-pro",
+      "content_hash": "d9a6820cb50bc005f950eadfa652e1d6fbbf941ffa36b4b656b8430c1b5cbe0e",
+      "tags": [
+        "download",
+        "aria2"
+      ]
+    },
+    {
+      "id": "ariang",
+      "name": "AriaNg",
+      "description": "Web UI for Aria2.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/ariang/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/ariang/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/ariang",
+      "content_hash": "961bcd4f46e44e85f1b749a996b5792b2661e03d15acd90d0f21263be2a487b0",
+      "tags": [
+        "download",
+        "aria2",
+        "ui"
+      ]
+    },
+    {
+      "id": "authentik",
+      "name": "Authentik",
+      "description": "Identity provider and SSO platform.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/authentik/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/authentik/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/authentik",
+      "content_hash": "e1459ae185ce2769c707a543740cad4efd23c8e21a081e27fad1aa1c07fbf42f",
+      "tags": [
+        "sso",
+        "auth",
+        "identity",
+        "security"
+      ]
+    },
+    {
+      "id": "babelduck",
+      "name": "BabelDuck",
+      "description": "AI language/productivity tool placeholder; verify upstream image before use.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/babelduck/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/babelduck/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/babelduck",
+      "content_hash": "8769b6200de0662ca296570e9da2b95a93cb0a02040781c59db3223f952fd42b",
+      "tags": [
+        "ai",
+        "productivity",
+        "language"
+      ]
+    },
+    {
+      "id": "baidunetdisk",
+      "name": "BaiduNetDisk",
+      "description": "Baidu Netdisk desktop client in browser container.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/baidunetdisk/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/baidunetdisk/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/baidunetdisk",
+      "content_hash": "ed248f6f9fc81c33938bff3fd1ed3bc2288c376a4d0c0e5a37a8e9022f81f682",
+      "tags": [
+        "cloud-drive",
+        "baidu",
+        "browser"
+      ]
+    },
+    {
+      "id": "bazarr",
+      "name": "Bazarr",
+      "description": "Subtitle management for Sonarr/Radarr.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/bazarr/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/bazarr/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/bazarr",
+      "content_hash": "1b1773f30424463a06258fa263dece49f978e30c9f40c217bae71174177a7310",
+      "tags": [
+        "arr",
+        "subtitles",
+        "media"
+      ]
+    },
+    {
+      "id": "beszel",
+      "name": "Beszel",
+      "description": "Lightweight server monitoring hub.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/beszel/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/beszel/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/beszel",
+      "content_hash": "31fb619070e080c94204e36de0a0ea578113c2c7a68adcebb14038dedd7fd452",
+      "tags": [
+        "monitoring",
+        "metrics",
+        "server"
+      ]
+    },
+    {
+      "id": "brave-browser",
+      "name": "Brave Browser",
+      "description": "Brave browser in container.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/brave-browser/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/brave-browser/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/brave-browser",
+      "content_hash": "aa99e0264e768c893b728ddbd28813b44eb70a52f153e4b4689a83c6318c6789",
+      "tags": [
+        "browser",
+        "remote"
+      ]
+    },
+    {
+      "id": "caddy-manager",
+      "name": "Caddy Manager",
+      "description": "UI for managing Caddy configuration.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy-manager/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy-manager/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/caddy-manager",
+      "content_hash": "106bbc2fd576e4c8a2945cfe038e3d90c766c8201ed6a39c0f5352ebd0cacabf",
+      "tags": [
+        "proxy",
+        "caddy",
+        "ui"
+      ]
+    },
+    {
+      "id": "caddy",
+      "name": "Caddy Server",
+      "description": "Caddy web server and reverse proxy.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/caddy",
+      "content_hash": "55f671343c91c63a95e72ae1cb31be657bd3bcc0679fe49a88bbd3f40e9e3958",
+      "tags": [
+        "proxy",
+        "tls",
+        "networking",
+        "go"
+      ]
+    },
+    {
+      "id": "chrome-browser",
+      "name": "Chrome Browser",
+      "description": "Browser in container. Chromium image used as Chrome-compatible option.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/chrome-browser/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/chrome-browser/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/chrome-browser",
+      "content_hash": "3972f3e98a68da2bbd019278483c8fa1b66c55dd03a19b5e916c7b30c63f3c0d",
+      "tags": [
+        "browser",
+        "remote"
+      ]
+    },
+    {
+      "id": "cloudflare-tunnel",
+      "name": "Cloudflare Tunnel",
+      "description": "Cloudflare Tunnel connector.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/cloudflare-tunnel/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/cloudflare-tunnel/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/cloudflare-tunnel",
+      "content_hash": "67fd6c45feef89d0bfc1df5f018ce57665ecd84db1a200f5c2a6bf40b92431af",
+      "tags": [
+        "tunnel",
+        "cloudflare",
+        "networking"
+      ]
+    },
+    {
+      "id": "code-server",
+      "name": "Code Server",
+      "description": "VS Code in browser.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/code-server/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/code-server/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/code-server",
+      "content_hash": "a699e571a54498bb3d5e11227ab632afdc91dea09a8fa95f245f4b44bf8ff3e6",
+      "tags": [
+        "dev",
+        "ide"
+      ]
+    },
+    {
+      "id": "collabora-code",
+      "name": "Collabora CODE",
+      "description": "LibreOffice Online / Collabora document server.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/collabora-code/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/collabora-code/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/collabora-code",
+      "content_hash": "2817e08fa897610c70ee0ac9d63f553790cc5dd1c166a0890521c62867c9c121",
+      "tags": [
+        "office",
+        "libreoffice",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "description": "LLM app platform. Full production stack requires multiple services.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/dify/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/dify/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/dify",
+      "content_hash": "8d79c5c9f890ed841b7b603b276800178d298e27da53abd05cdac29fa7fead24",
+      "tags": [
+        "ai",
+        "rag",
+        "workflow"
+      ]
+    },
+    {
+      "id": "diun",
+      "name": "Diun",
+      "description": "Docker image update notifier.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/diun/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/diun/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/diun",
+      "content_hash": "5ec83cc750ca9b60f3609aa240beb119dca55af769d393c161d1ac7933d930da",
+      "tags": [
+        "docker",
+        "updates",
+        "notifications"
+      ]
+    },
+    {
+      "id": "docker-android",
+      "name": "Docker Android",
+      "description": "Android emulator in Docker. Replaces Redroid template.",
+      "version": "2.1.1",
+      "author": "moratac",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/docker-android/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/docker-android/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/docker-android",
+      "content_hash": "6ee77e94f8191369c5be85dce81c4462d825224fabc3c9e36186d619ab2ac764",
+      "tags": [
+        "android",
+        "emulator",
+        "remote"
+      ]
+    },
+    {
+      "id": "dozzle",
+      "name": "Dozzle",
+      "description": "Real-time Docker logs viewer.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/dozzle/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/dozzle/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/dozzle",
+      "content_hash": "888935559d623194a192df7d0312bda2184d66c2fd2508b76ec6eda1f043cbec",
+      "tags": [
+        "logs",
+        "docker",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "emby",
+      "name": "Emby",
+      "description": "Media server alternative to Jellyfin.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/emby/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/emby/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/emby",
+      "content_hash": "92575591686df6d12d54916964ec3e8fec3dc4bb0ed503ecb3b8d4681977701d",
+      "tags": [
+        "media",
+        "video",
+        "streaming"
+      ]
+    },
+    {
+      "id": "filebrowser",
+      "name": "File Browser",
+      "description": "Web file manager.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/filebrowser/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/filebrowser/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/filebrowser",
+      "content_hash": "719c35f87967ae08087586b0721caced86948d5231e40e8cedaa3c9be9e76a2d",
+      "tags": [
+        "files",
+        "browser",
+        "webdav"
+      ]
+    },
+    {
+      "id": "gameyfin",
+      "name": "Gameyfin",
+      "description": "Game library and download/share manager.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/gameyfin/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/gameyfin/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/gameyfin",
+      "content_hash": "fd1eba823d7d1b420e6cb8dea33e7f59a6c9dd627ed6f9ad346bc58b02aa2824",
+      "tags": [
+        "games",
+        "library"
+      ]
+    },
+    {
+      "id": "ghostfolio",
+      "name": "Ghostfolio",
+      "description": "Personal finance dashboard. Requires database/Redis for production.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/ghostfolio/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/ghostfolio/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/ghostfolio",
+      "content_hash": "2db995fa273824533abba75f4ea525d52ce552e22a3ee6df8fc362e67d3b6968",
+      "tags": [
+        "finance",
+        "portfolio"
+      ]
+    },
+    {
+      "id": "gitea",
+      "name": "Gitea Server",
+      "description": "Lightweight self-hosted Git server. Best first choice for homelab Git.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/gitea/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/gitea/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/gitea",
+      "content_hash": "31c3e8c2242cdd3c3960028e728cbbcc2383d810fe2b39c9b8f5bf82b5a864ed",
+      "tags": [
+        "git",
+        "devops",
+        "scm"
+      ]
+    },
+    {
+      "id": "gitlab-ce",
+      "name": "GitLab CE",
+      "description": "Full-featured self-hosted GitLab Community Edition.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/gitlab-ce/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/gitlab-ce/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/gitlab-ce",
+      "content_hash": "d98ba7c98419eeb4429f6de5881498b66950e595313b37ae817ce9249fe9ec4a",
+      "tags": [
+        "git",
+        "devops",
+        "ci",
+        "scm"
+      ]
+    },
+    {
+      "id": "gogs",
+      "name": "Gogs",
+      "description": "Very lightweight self-hosted Git service.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/gogs/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/gogs/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/gogs",
+      "content_hash": "bc3e193aaf30d8d2c9363627e5dad25e368d204b17ac348168b37caa9832d2de",
+      "tags": [
+        "git",
+        "devops",
+        "scm"
+      ]
+    },
+    {
+      "id": "gospeed",
+      "name": "GoSpeed",
+      "description": "Network speed test / file transfer helper.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/gospeed/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/gospeed/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/gospeed",
+      "content_hash": "e344a16b427e6b1b792f20ff9d29084cc6786b873b36fe6d7d0940b886132bc8",
+      "tags": [
+        "network",
+        "speedtest",
+        "go"
+      ]
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "description": "Observability dashboard platform.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/grafana/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/grafana/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/grafana",
+      "content_hash": "9b3a6ca84fc3e1dd42b981f24519d992b8744f7e76f17c4e7fcc3ed244ef379b",
+      "tags": [
+        "monitoring",
+        "metrics",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "gramps-web",
+      "name": "Gramps Web",
+      "description": "Family tree and genealogy web app.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/gramps-web/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/gramps-web/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/gramps-web",
+      "content_hash": "a609cceed2ca6d8d87d523d6e616ebfed3114d3bd01780a1201e24a4a63d9a22",
+      "tags": [
+        "family",
+        "genealogy"
+      ]
+    },
+    {
+      "id": "grocy",
+      "name": "Grocy",
+      "description": "Home ERP for pantry, groceries, chores, and inventory.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/grocy/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/grocy/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/grocy",
+      "content_hash": "866ea7b59d5250a22d447ac2afeb4a1d0e84dc5ed746b530c8d30a4ba75627b8",
+      "tags": [
+        "home",
+        "erp",
+        "inventory"
+      ]
+    },
+    {
+      "id": "hermes-agent",
+      "name": "Hermes Agent",
+      "description": "Hermes Agent. Verify official image and compose before production use.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/hermes-agent/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/hermes-agent/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/hermes-agent",
+      "content_hash": "4b90618aaeccfac08587d3db4c602841df1afdbb32df4b6c4b1c13833f41996e",
+      "tags": [
+        "ai",
+        "agent"
+      ]
+    },
+    {
+      "id": "hertzbeat",
+      "name": "HertzBeat",
+      "description": "Universal monitoring platform for HTTP, DB, network, and services.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/hertzbeat/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/hertzbeat/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/hertzbeat",
+      "content_hash": "52b0aeb0ff22855976fe5e46c4b4c70a60f1910173bddcaf3632a0e5212d486f",
+      "tags": [
+        "monitoring",
+        "alerting"
+      ]
+    },
+    {
+      "id": "homarr",
+      "name": "Homarr",
+      "description": "Dashboard for homelab services.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/homarr/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/homarr/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/homarr",
+      "content_hash": "750eca7cc397f0968b49aa80df51cfbdfa2cccca289745c449c315a707374ff8",
+      "tags": [
+        "dashboard",
+        "homelab"
+      ]
+    },
+    {
+      "id": "homebox",
+      "name": "Homebox",
+      "description": "Home inventory and asset manager.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/homebox/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/homebox/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/homebox",
+      "content_hash": "0a232c199796f5d7df0df01955bea21d43e4d80c8934a2f19a6d71214b8e4908",
+      "tags": [
+        "home",
+        "inventory",
+        "assets"
+      ]
+    },
+    {
+      "id": "homepage",
+      "name": "Homepage",
+      "description": "Highly customizable application dashboard.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/homepage/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/homepage/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/homepage",
+      "content_hash": "d8db58de73ffa66a649a8507a8cbdc120329c1b49a504d676982bf85298751f3",
+      "tags": [
+        "dashboard",
+        "homepage"
+      ]
+    },
+    {
+      "id": "immich",
+      "name": "Immich",
+      "description": "Photo and video backup system. Full stack requires Postgres and Redis.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/immich/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/immich/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/immich",
+      "content_hash": "3eab7c9f5e018c6fb2aaf640f7e61ecc31f1642ee66c65bb79525bbea6c22836",
+      "tags": [
+        "photos",
+        "media",
+        "backup"
+      ]
+    },
+    {
+      "id": "it-tools",
+      "name": "IT-Tools",
+      "description": "Useful developer and sysadmin web tools.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/it-tools/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/it-tools/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/it-tools",
+      "content_hash": "f5050153f6c61067a83abaa3c943fd33f72d3c210d112bd472b2b3779bc53608",
+      "tags": [
+        "tools",
+        "developer"
+      ]
+    },
+    {
+      "id": "jellyfin",
+      "name": "Jellyfin",
+      "description": "Media server.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/jellyfin/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/jellyfin/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/jellyfin",
+      "content_hash": "5b9e01420bce083752b4fae4fd9878ea67ffbb4073bfecd63f47368be4446ae9",
+      "tags": [
+        "media",
+        "video",
+        "streaming"
+      ]
+    },
+    {
+      "id": "jellyseerr",
+      "name": "Jellyseerr",
+      "description": "Media request portal for Jellyfin, Sonarr, and Radarr.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/jellyseerr/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/jellyseerr/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/jellyseerr",
+      "content_hash": "35c8c397a059dfb555b05a3b4eedc041e9adfb3e3ed2672bfa08d1134fcf105a",
+      "tags": [
+        "jellyfin",
+        "requests",
+        "arr",
+        "media"
+      ]
+    },
+    {
+      "id": "kavita",
+      "name": "Kavita",
+      "description": "Reading server for manga, comics, and books.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/kavita/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/kavita/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/kavita",
+      "content_hash": "6abbffe5cec10c158a852785650aeac4218e87a3deebad945402246a5a57c8bd",
+      "tags": [
+        "books",
+        "manga",
+        "media"
+      ]
+    },
+    {
+      "id": "komga",
+      "name": "Komga",
+      "description": "Comics and manga server.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/komga/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/komga/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/komga",
+      "content_hash": "155d7f0097d751d6c7382ae5b14ca475f1f8644245e73a72ce96028dbd51bdba",
+      "tags": [
+        "comics",
+        "manga",
+        "media"
+      ]
+    },
+    {
+      "id": "lancache",
+      "name": "LanCache",
+      "description": "LAN cache for game/platform downloads. Requires DNS planning.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/lancache/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/lancache/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/lancache",
+      "content_hash": "e7f4736d332e5b1d2d9b20f7d46a50942c2ca6cd6bd79b606ff13cb28b4c76e2",
+      "tags": [
+        "cache",
+        "gaming",
+        "network"
+      ]
+    },
+    {
+      "id": "langfuse",
+      "name": "Langfuse",
+      "description": "LLM observability. Production stack requires supporting services.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/langfuse/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/langfuse/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/langfuse",
+      "content_hash": "11583d148a4bb75e0112822405d1157475a4031dbc0e6ac301a5b3ec83c3ea9a",
+      "tags": [
+        "llmops",
+        "observability",
+        "ai"
+      ]
+    },
+    {
+      "id": "lanraragi",
+      "name": "LANraragi",
+      "description": "Archive and manga/doujin library manager.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/lanraragi/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/lanraragi/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/lanraragi",
+      "content_hash": "7c4d9618a6cd35d23e051e0830ac718342d5e7524ed13c4d17bb4d10affc6cf3",
+      "tags": [
+        "manga",
+        "archive",
+        "media"
+      ]
+    },
+    {
+      "id": "libretv",
+      "name": "LibreTV",
+      "description": "Video aggregation app; source availability may be unstable.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/libretv/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/libretv/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/libretv",
+      "content_hash": "9d2bad8fa625620286add70949cfff6984f051ed1c533ad23d1ebb133ca1d2f1",
+      "tags": [
+        "media",
+        "video",
+        "unstable-source"
+      ]
+    },
+    {
+      "id": "litellm",
+      "name": "LiteLLM",
+      "description": "LLM gateway/proxy.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/litellm/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/litellm/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/litellm",
+      "content_hash": "0726fdbe401099c79a825f8dafd085dda268e98f3aa651300a4284b46a216bba",
+      "tags": [
+        "llm",
+        "gateway",
+        "proxy"
+      ]
+    },
+    {
+      "id": "llama-cpp",
+      "name": "llama.cpp Server",
+      "description": "llama.cpp HTTP server. CPU/GPU variants may differ.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/llama-cpp/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/llama-cpp/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/llama-cpp",
+      "content_hash": "c37f4a81608e1e1e136353a5dc1e420e54c5043425e0426efa85c9269cc42d9f",
+      "tags": [
+        "ai",
+        "llm",
+        "inference"
+      ]
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "description": "LM Studio is usually desktop-native; template is an external service placeholder.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/lm-studio/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/lm-studio/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/lm-studio",
+      "content_hash": "d3f67cd2659a8bb1ae1b8ad9c08f7735b966c3d6c4d38fc6dd833a8797c9fdd8",
+      "tags": [
+        "ai",
+        "llm",
+        "external"
+      ]
+    },
+    {
+      "id": "mediacms",
+      "name": "MediaCMS",
+      "description": "Self-hosted video CMS, like a private YouTube for personal, family, learning, or dataset videos.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/mediacms/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/mediacms/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/mediacms",
+      "content_hash": "edc2289c2346b47238eb064a86f2c95332408336afa1f3247ada1cae9834ebce",
+      "tags": [
+        "video",
+        "cms",
+        "youtube-like",
+        "media"
+      ]
+    },
+    {
+      "id": "metube",
+      "name": "MeTube",
+      "description": "Web UI for yt-dlp video downloads.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/metube/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/metube/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/metube",
+      "content_hash": "8f65c8aef3049a69a9b3917d926265461a5f1a17a11f577f650a04d8752f250b",
+      "tags": [
+        "youtube",
+        "download",
+        "yt-dlp"
+      ]
+    },
+    {
+      "id": "monica",
+      "name": "Monica",
+      "description": "Personal CRM.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/monica/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/monica/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/monica",
+      "content_hash": "3e8b9b09d6d077aad5caf79b19dce8564890c98db7c42f32cc6f7467a9500209",
+      "tags": [
+        "crm",
+        "personal"
+      ]
+    },
+    {
+      "id": "moviepilot-v2",
+      "name": "MoviePilot v2",
+      "description": "Chinese media automation ecosystem. Needs careful env setup.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/moviepilot-v2/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/moviepilot-v2/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/moviepilot-v2",
+      "content_hash": "732ab7be88d45c509dcc6166cab667a38454cf81de87079bab13f55f9eb6a90a",
+      "tags": [
+        "arr",
+        "media",
+        "automation"
+      ]
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "description": "Workflow automation.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/n8n/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/n8n/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/n8n",
+      "content_hash": "55922e6afbf64296651cae2a686ec0b8ce7d984225ad8c817c5879d4d94d908c",
+      "tags": [
+        "automation",
+        "workflow",
+        "ai"
+      ]
+    },
+    {
+      "id": "netdata",
+      "name": "Netdata",
+      "description": "Real-time infrastructure monitoring.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/netdata/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/netdata/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/netdata",
+      "content_hash": "7c5b25ebdf7c780095ecb8c7f1965222cddd3c785fbd0ae9a1f1720baf057832",
+      "tags": [
+        "monitoring",
+        "metrics",
+        "realtime"
+      ]
+    },
+    {
+      "id": "nextexplorer",
+      "name": "NextExplorer",
+      "description": "Native file browser for mounted NAS paths.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/nextexplorer/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/nextexplorer/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/nextexplorer",
+      "content_hash": "a24c026526b45357363c4a05038bce614d01bb75fa526e7820454c3d3818c21b",
+      "tags": [
+        "files",
+        "nas",
+        "browser"
+      ]
+    },
+    {
+      "id": "odoo",
+      "name": "Odoo",
+      "description": "Business apps / ERP. Includes Postgres service.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/odoo/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/odoo/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/odoo",
+      "content_hash": "737ee54e05bb9ec38912a1c446c51a5e5596b50a7c8366a6b5857fa9b06d6aa6",
+      "tags": [
+        "business",
+        "erp"
+      ]
+    },
+    {
+      "id": "onlyoffice",
+      "name": "OnlyOffice Docs",
+      "description": "Online office document server.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/onlyoffice/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/onlyoffice/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/onlyoffice",
+      "content_hash": "9d881f658aa12f113010039fb54ccee4423fab584d47c69f5105caf1f6c5d6d6",
+      "tags": [
+        "office",
+        "documents"
+      ]
+    },
+    {
+      "id": "open-webui",
+      "name": "Open WebUI",
+      "description": "Web UI for Ollama and OpenAI-compatible APIs.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/open-webui/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/open-webui/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/open-webui",
+      "content_hash": "c97544979da6f116979138d7a69cc1abf67e64a0d11aff566bfe59cbc07a28b9",
+      "tags": [
+        "ai",
+        "llm",
+        "webui"
+      ]
+    },
+    {
+      "id": "openclaw",
+      "name": "OpenClaw",
+      "description": "AI agent platform. High privilege; review official docs before deploy.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/openclaw/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/openclaw/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/openclaw",
+      "content_hash": "bef4f93efc8baf114b0b7405294d3cdfe1733ea95d930186797a468bb8d64763",
+      "tags": [
+        "ai",
+        "agent",
+        "high-privilege"
+      ]
+    },
+    {
+      "id": "opencloud",
+      "name": "OpenCloud",
+      "description": "Cloud file collaboration platform. Verify production compose before use.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/opencloud/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/opencloud/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/opencloud",
+      "content_hash": "609431a44a90db552a100bda08fe2da2d0e38e79ed6d57c7262ee7415a34b934",
+      "tags": [
+        "cloud",
+        "files",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "overseerr",
+      "name": "Overseerr",
+      "description": "Media request portal commonly used with Plex/Radarr/Sonarr; can still fit broader ARR workflows.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/overseerr/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/overseerr/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/overseerr",
+      "content_hash": "e7504fdeaa836375fc9b51acb38fff0d8cf01e727ccbc2881e0a8de854605fa7",
+      "tags": [
+        "requests",
+        "arr",
+        "media"
+      ]
+    },
+    {
+      "id": "pinchflat",
+      "name": "Pinchflat",
+      "description": "YouTube channel/playlist downloader designed for media-server integration.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/pinchflat/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/pinchflat/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/pinchflat",
+      "content_hash": "d86b414024e05e3fb08807fefc9b23fe24792912ef00789c075609c8d4d21910",
+      "tags": [
+        "youtube",
+        "download",
+        "media"
+      ]
+    },
+    {
+      "id": "prowlarr",
+      "name": "Prowlarr",
+      "description": "Indexer manager for ARR stack.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/prowlarr/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/prowlarr/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/prowlarr",
+      "content_hash": "a47d6a689e072b5d7659611fdedd74626211cdb551062ef80148939a7a57e888",
+      "tags": [
+        "arr",
+        "indexer",
+        "media"
+      ]
+    },
+    {
+      "id": "qbittorrent",
+      "name": "qBittorrent",
+      "description": "BitTorrent client.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/qbittorrent/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/qbittorrent/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/qbittorrent",
+      "content_hash": "f745e5495f4d0ea446e665d371c2878eed2aef0f5cc3a9bc82289a9706f48b7a",
+      "tags": [
+        "torrent",
+        "download"
+      ]
+    },
+    {
+      "id": "qdrant",
+      "name": "Qdrant",
+      "description": "Vector database for AI/RAG.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/qdrant/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/qdrant/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/qdrant",
+      "content_hash": "2e4aa38a2e1e2e08600674a285d83e1292f5b07e47e06f8455f81318b891d95c",
+      "tags": [
+        "vector-db",
+        "rag",
+        "ai"
+      ]
+    },
+    {
+      "id": "radarr",
+      "name": "Radarr",
+      "description": "Movie management.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/radarr/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/radarr/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/radarr",
+      "content_hash": "5a2df98c8d89f3f7916c17fe1abeed3915b007a7dd50912e52f018aa766f4b2c",
+      "tags": [
+        "arr",
+        "movies",
+        "media"
+      ]
+    },
+    {
+      "id": "resilio-sync",
+      "name": "Resilio Sync",
+      "description": "P2P file synchronization based on BitTorrent technology.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/resilio-sync/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/resilio-sync/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/resilio-sync",
+      "content_hash": "237ac8d3473bc982420258553663fe3dfd3118d8390edba3873942a20f2e709c",
+      "tags": [
+        "sync",
+        "p2p",
+        "files"
+      ]
+    },
+    {
+      "id": "retroassembly",
+      "name": "RetroAssembly",
+      "description": "Browser-based retro game cabinet for personal ROM collections.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/retroassembly/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/retroassembly/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/retroassembly",
+      "content_hash": "78845911f0c7a3b80a35bd202b9a0306f1c1a7b46f2eadc2bc8d32c9b84d1f13",
+      "tags": [
+        "roms",
+        "retro",
+        "games"
+      ]
+    },
+    {
+      "id": "romm",
+      "name": "RomM",
+      "description": "ROM library manager with metadata and browser play support. Full stack requires DB/Redis in production.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/romm/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/romm/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/romm",
+      "content_hash": "c1c5fefe053cf823146164e0b8ed90234bddb89fc51c69ac132fa313050f53a0",
+      "tags": [
+        "roms",
+        "retro",
+        "games",
+        "library"
+      ]
+    },
+    {
+      "id": "safeline",
+      "name": "Safeline WAF",
+      "description": "Web application firewall stack. Review official multi-service compose before production.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/safeline/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/safeline/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/safeline",
+      "content_hash": "221d4cdc4c432075f3d15200fd810f5638ad27a99107d53064e386bfabaf0c5a",
+      "tags": [
+        "waf",
+        "security",
+        "reverse-proxy"
+      ]
+    },
+    {
+      "id": "searxng",
+      "name": "SearXNG",
+      "description": "Privacy-respecting metasearch engine.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/searxng/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/searxng/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/searxng",
+      "content_hash": "7c8b66a912177d7560fe9312d1be24c7ba9b1ab652b5f3518fc924ea407b1dd1",
+      "tags": [
+        "search",
+        "rag",
+        "privacy"
+      ]
+    },
+    {
+      "id": "sftpgo",
+      "name": "SFTPGo",
+      "description": "SFTP, WebDAV and file transfer server.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/sftpgo/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/sftpgo/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/sftpgo",
+      "content_hash": "4dcbfeaaa68f941b892acc69a959b0e2b0b60b41b46cb49d70f8bf687746598e",
+      "tags": [
+        "sftp",
+        "webdav",
+        "files"
+      ]
+    },
+    {
+      "id": "sglang",
+      "name": "SGLang",
+      "description": "High-performance LLM serving runtime. GPU recommended.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/sglang/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/sglang/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/sglang",
+      "content_hash": "2eacc624bbb734eb0efabdda9248cc1f30f334ebfbc27567433620346b916ea6",
+      "tags": [
+        "ai",
+        "llm",
+        "inference",
+        "gpu"
+      ]
+    },
+    {
+      "id": "sonarr",
+      "name": "Sonarr",
+      "description": "TV series management.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/sonarr/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/sonarr/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/sonarr",
+      "content_hash": "205b635427531357a2fa47300cded1532a280bf330ebd595c643917d28098f03",
+      "tags": [
+        "arr",
+        "tv",
+        "media"
+      ]
+    },
+    {
+      "id": "streamyfin",
+      "name": "Streamyfin",
+      "description": "Enhanced Jellyfin client ecosystem. Usually client-side/mobile; template is a placeholder/link entry.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/streamyfin/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/streamyfin/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/streamyfin",
+      "content_hash": "2cfe6e806db63b2b5add2c6ebf85d06141e366b87886612572b726ab05954511",
+      "tags": [
+        "jellyfin",
+        "client",
+        "media"
+      ]
+    },
+    {
+      "id": "suwayomi",
+      "name": "Suwayomi",
+      "description": "Manga source server.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/suwayomi/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/suwayomi/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/suwayomi",
+      "content_hash": "03a5220ee1ee8f7b10abd5811dfe1ea2cdcb31bbdd888a2d9c85986e60a2be28",
+      "tags": [
+        "manga",
+        "media"
+      ]
+    },
+    {
+      "id": "syncthing",
+      "name": "Syncthing",
+      "description": "Open-source peer-to-peer file synchronization.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/syncthing/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/syncthing/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/syncthing",
+      "content_hash": "7dd92327353a61c71e003fbd2559ada77f1ff3e8a2eda46db107fa23ecc248d0",
+      "tags": [
+        "sync",
+        "p2p",
+        "files"
+      ]
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "description": "Mesh VPN. Usually installed on host OS; Docker template included for subnet-router/container cases.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/tailscale/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/tailscale/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/tailscale",
+      "content_hash": "00e38854d9ab450bbb93044d77a788f64f1e842b1731f3cce4d6d2da3e4bfb93",
+      "tags": [
+        "vpn",
+        "networking",
+        "mesh"
+      ]
+    },
+    {
+      "id": "tdarr",
+      "name": "Tdarr",
+      "description": "Distributed video transcoding, library optimization, and codec normalization platform.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/tdarr/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/tdarr/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/tdarr",
+      "content_hash": "ed4a8e2f5583f1eea55e003d4f72c9180a7d492132607859dbf8d2337fb45f0f",
+      "tags": [
+        "transcoding",
+        "video",
+        "optimization",
+        "media"
+      ]
+    },
+    {
+      "id": "transmission",
+      "name": "Transmission",
+      "description": "BitTorrent client.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/transmission/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/transmission/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/transmission",
+      "content_hash": "7dfbf3425d0c81e126a10d74506c1e28fef471f20fb1148ecc655bf907da9890",
+      "tags": [
+        "torrent",
+        "download"
+      ]
+    },
+    {
+      "id": "tubearchivist",
+      "name": "TubeArchivist",
+      "description": "Self-hosted YouTube archive with metadata, channel sync, subtitles, and indexing.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/tubearchivist/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/tubearchivist/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/tubearchivist",
+      "content_hash": "acb84fc99a3a1ecbc5a28b6ee0ec2bd0715f354b45d4d6411318f1bdd3a535d7",
+      "tags": [
+        "youtube",
+        "archive",
+        "video",
+        "metadata"
+      ]
+    },
+    {
+      "id": "univer",
+      "name": "Univer",
+      "description": "Open-source office/collaboration suite. Verify upstream image for your region.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/univer/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/univer/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/univer",
+      "content_hash": "1b7eacdbebb0e3510178351e9e35a81294373f578458bbbb2a6407a6e7dde017",
+      "tags": [
+        "office",
+        "spreadsheet",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "unmanic",
+      "name": "Unmanic",
+      "description": "Simple automatic video library optimizer/transcoder.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/unmanic/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/unmanic/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/unmanic",
+      "content_hash": "e0f863f1a5215cdf75486bb9ce68b458e1f6cd43975931f575b952004e5bb1a8",
+      "tags": [
+        "transcoding",
+        "video",
+        "optimization",
+        "media"
+      ]
+    },
+    {
+      "id": "uptime-kuma",
+      "name": "Uptime Kuma",
+      "description": "Self-hosted uptime monitoring.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/uptime-kuma/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/uptime-kuma/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/uptime-kuma",
+      "content_hash": "776c2392dc3e61494f8c2c5945a0796215ed99c0e140efb851de816350deab33",
+      "tags": [
+        "monitoring",
+        "uptime",
+        "status"
+      ]
+    },
+    {
+      "id": "vaultwarden",
+      "name": "Vaultwarden",
+      "description": "Lightweight Bitwarden-compatible password manager.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/vaultwarden/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/vaultwarden/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/vaultwarden",
+      "content_hash": "c534446580a73a98925c983f1c96a13fb1cb3270b3a425800995dfbb3bc5e7ad",
+      "tags": [
+        "passwords",
+        "security",
+        "vault"
+      ]
+    },
+    {
+      "id": "virtual-dsm",
+      "name": "Virtual DSM",
+      "description": "Virtual Synology DSM. Requires KVM/privileged setup; experimental.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/virtual-dsm/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/virtual-dsm/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/virtual-dsm",
+      "content_hash": "bac99e3cc0f93fe9491d4ec30a7e4ee936ad2d59e3dd4d0f458bf24664dbac9d",
+      "tags": [
+        "nas",
+        "virtualization",
+        "experimental"
+      ]
+    },
+    {
+      "id": "vllm",
+      "name": "vLLM",
+      "description": "High-throughput OpenAI-compatible LLM inference server. GPU recommended.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/vllm/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/vllm/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/vllm",
+      "content_hash": "dcf91dad101c5fbb0f172503336a7dc5f9264aae4aa1e10bffd860dc3d1cb91d",
+      "tags": [
+        "ai",
+        "llm",
+        "inference",
+        "gpu"
+      ]
+    },
+    {
+      "id": "wallos",
+      "name": "Wallos",
+      "description": "Subscription and recurring expense tracker.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/wallos/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/wallos/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/wallos",
+      "content_hash": "45f6697019781af7f5e8ac77d248a46827d354f246478143e1eb2ba36e391640",
+      "tags": [
+        "finance",
+        "subscriptions"
+      ]
+    },
+    {
+      "id": "watchtower",
+      "name": "Watchtower",
+      "description": "Docker auto-update tool. Recommended notification-only mode first.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/watchtower/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/watchtower/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/watchtower",
+      "content_hash": "c5910d51b432d38d42507c364c9519fb88e421dbcf8830f45e8837446f0a9202",
+      "tags": [
+        "docker",
+        "updates"
+      ]
+    },
+    {
+      "id": "webrcade",
+      "name": "webRcade",
+      "description": "Web-based retro gaming frontend placeholder; mount built webRcade files.",
+      "version": "2.1.1",
+      "author": "Moratac Arcane Registry",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/webrcade/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/webrcade/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/webrcade",
+      "content_hash": "ba659065e86216b07dbb3d2e221b5ad075547bdf0be90531468b20d3240d433a",
+      "tags": [
+        "retro",
+        "games",
+        "frontend"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "wallos",
+  "name": "Wallos",
+  "description": "Subscription and recurring expense tracker.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Business & Finance",
+  "target_vm": "VM104",
+  "tags": [
+    "finance",
+    "subscriptions"
+  ],
+  "ports": [
+    "8282"
+  ],
+  "image": "bellamy/wallos:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

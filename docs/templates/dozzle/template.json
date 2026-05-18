@@ -1,0 +1,26 @@
+{
+  "id": "dozzle",
+  "name": "Dozzle",
+  "description": "Real-time Docker logs viewer.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Monitoring",
+  "target_vm": "VM101",
+  "tags": [
+    "logs",
+    "docker",
+    "monitoring"
+  ],
+  "ports": [
+    "8081"
+  ],
+  "image": "amir20/dozzle:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

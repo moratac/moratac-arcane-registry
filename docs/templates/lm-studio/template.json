@@ -1,0 +1,26 @@
+{
+  "id": "lm-studio",
+  "name": "LM Studio",
+  "description": "LM Studio is usually desktop-native; template is an external service placeholder.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "AI Inference",
+  "target_vm": "Mac/VM103",
+  "tags": [
+    "ai",
+    "llm",
+    "external"
+  ],
+  "ports": [
+    "1234"
+  ],
+  "image": "placeholder/manual",
+  "maturity": "external",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

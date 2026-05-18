@@ -1,0 +1,26 @@
+{
+  "id": "qbittorrent",
+  "name": "qBittorrent",
+  "description": "BitTorrent client.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Download & ARR",
+  "target_vm": "VM102",
+  "tags": [
+    "torrent",
+    "download"
+  ],
+  "ports": [
+    "8083",
+    "6881"
+  ],
+  "image": "lscr.io/linuxserver/qbittorrent:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

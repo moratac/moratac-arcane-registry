@@ -1,0 +1,29 @@
+{
+  "id": "gitlab-ce",
+  "name": "GitLab CE",
+  "description": "Full-featured self-hosted GitLab Community Edition.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Developer Tools / DevOps",
+  "target_vm": "VM104",
+  "tags": [
+    "git",
+    "devops",
+    "ci",
+    "scm"
+  ],
+  "ports": [
+    "8929",
+    "2224"
+  ],
+  "image": "gitlab/gitlab-ce:latest",
+  "maturity": "review",
+  "complexity_note": "Heavy. Recommend dedicated VM with at least 4C/8G RAM. Review before deployment.",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

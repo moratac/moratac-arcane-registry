@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/dify.svg
+
+# IMPORTANT: Starter template for Dify.
+# Review official production compose before deploying.
+services:
+  dify:
+    image: langgenius/dify-api:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${DIFY_PORT_1:-8088}:8088"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - dify-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  dify-data:

@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/lanraragi.svg
+
+services:
+  lanraragi:
+    image: difegue/lanraragi:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${LANRARAGI_PORT_1:-3000}:3000"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - lanraragi-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  lanraragi-config:

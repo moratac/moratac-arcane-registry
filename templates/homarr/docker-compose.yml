@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/homarr.svg
+
+services:
+  homarr:
+    image: ghcr.io/homarr-labs/homarr:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${HOMARR_PORT_1:-7575}:7575"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - homarr-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  homarr-config:

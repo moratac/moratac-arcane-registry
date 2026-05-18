@@ -1,0 +1,20 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/virtual-dsm.svg
+
+# IMPORTANT: Starter template for Virtual DSM.
+# Review official production compose before deploying.
+services:
+  virtual-dsm:
+    image: vdsm/virtual-dsm:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${VIRTUAL_DSM_PORT_1:-5000}:5000"
+      - "${VIRTUAL_DSM_PORT_2:-5001}:5001"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - virtual-dsm-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  virtual-dsm-data:

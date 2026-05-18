@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/homebox.svg
+
+services:
+  homebox:
+    image: ghcr.io/sysadminsmedia/homebox:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${HOMEBOX_PORT_1:-7745}:7745"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - homebox-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  homebox-config:

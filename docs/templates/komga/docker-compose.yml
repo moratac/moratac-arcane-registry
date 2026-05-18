@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/komga.svg
+
+services:
+  komga:
+    image: gotson/komga:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${KOMGA_PORT_1:-25600}:25600"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - komga-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  komga-config:

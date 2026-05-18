@@ -1,0 +1,28 @@
+{
+  "id": "gitea",
+  "name": "Gitea Server",
+  "description": "Lightweight self-hosted Git server. Best first choice for homelab Git.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Developer Tools / DevOps",
+  "target_vm": "VM104/VM101",
+  "tags": [
+    "git",
+    "devops",
+    "scm"
+  ],
+  "ports": [
+    "3000",
+    "2222"
+  ],
+  "image": "gitea/gitea:latest",
+  "maturity": "ready",
+  "complexity_note": "Good one-click candidate. Set ROOT_URL and SSH port before production.",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/anythingllm.svg
+
+services:
+  anythingllm:
+    image: mintplexlabs/anythingllm:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${ANYTHINGLLM_PORT_1:-3002}:3002"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - anythingllm-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  anythingllm-config:

@@ -1,0 +1,26 @@
+{
+  "id": "opencloud",
+  "name": "OpenCloud",
+  "description": "Cloud file collaboration platform. Verify production compose before use.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Storage & Files",
+  "target_vm": "VM101/VM102",
+  "tags": [
+    "cloud",
+    "files",
+    "collaboration"
+  ],
+  "ports": [
+    "9200"
+  ],
+  "image": "opencloudeu/opencloud-rolling:latest",
+  "maturity": "review",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

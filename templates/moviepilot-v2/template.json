@@ -1,0 +1,26 @@
+{
+  "id": "moviepilot-v2",
+  "name": "MoviePilot v2",
+  "description": "Chinese media automation ecosystem. Needs careful env setup.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Download & ARR",
+  "target_vm": "VM102",
+  "tags": [
+    "arr",
+    "media",
+    "automation"
+  ],
+  "ports": [
+    "3000"
+  ],
+  "image": "jxxghp/moviepilot-v2:latest",
+  "maturity": "review",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

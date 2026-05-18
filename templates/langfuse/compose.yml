@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/langfuse.svg
+
+# IMPORTANT: Starter template for Langfuse.
+# Review official production compose before deploying.
+services:
+  langfuse:
+    image: langfuse/langfuse:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${LANGFUSE_PORT_1:-3004}:3004"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - langfuse-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  langfuse-data:

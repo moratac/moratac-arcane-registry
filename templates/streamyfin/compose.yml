@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/streamyfin.svg
+
+# IMPORTANT: Starter template for Streamyfin.
+# Review official production compose before deploying.
+services:
+  streamyfin:
+    image: placeholder/manual
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${STREAMYFIN_PORT_1:-8097}:8097"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - streamyfin-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  streamyfin-data:

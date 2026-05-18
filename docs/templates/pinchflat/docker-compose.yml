@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/pinchflat.svg
+
+services:
+  pinchflat:
+    image: ghcr.io/kieraneglin/pinchflat:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${PINCHFLAT_PORT_1:-8945}:8945"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - pinchflat-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  pinchflat-config:

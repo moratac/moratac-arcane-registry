@@ -1,0 +1,25 @@
+{
+  "id": "brave-browser",
+  "name": "Brave Browser",
+  "description": "Brave browser in container.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Developer Tools",
+  "target_vm": "VM104",
+  "tags": [
+    "browser",
+    "remote"
+  ],
+  "ports": [
+    "3006"
+  ],
+  "image": "lscr.io/linuxserver/brave:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

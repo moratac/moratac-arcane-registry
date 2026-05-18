@@ -1,0 +1,14 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/watchtower.svg
+
+services:
+  watchtower:
+    image: containrrr/watchtower:latest
+    pull_policy: always
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      TZ: ${TZ:-UTC}
+      WATCHTOWER_MONITOR_ONLY: ${WATCHTOWER_MONITOR_ONLY:-true}
+      WATCHTOWER_CLEANUP: ${WATCHTOWER_CLEANUP:-true}

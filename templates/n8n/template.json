@@ -1,0 +1,26 @@
+{
+  "id": "n8n",
+  "name": "n8n",
+  "description": "Workflow automation.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "AI & Automation",
+  "target_vm": "VM103",
+  "tags": [
+    "automation",
+    "workflow",
+    "ai"
+  ],
+  "ports": [
+    "5678"
+  ],
+  "image": "n8nio/n8n:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

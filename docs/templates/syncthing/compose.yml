@@ -1,0 +1,18 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/syncthing.svg
+
+services:
+  syncthing:
+    image: syncthing/syncthing:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${SYNCTHING_PORT_1:-8384}:8384"
+      - "${SYNCTHING_PORT_2:-22000}:22000"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - syncthing-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  syncthing-config:

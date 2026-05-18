@@ -1,0 +1,25 @@
+{
+  "id": "gramps-web",
+  "name": "Gramps Web",
+  "description": "Family tree and genealogy web app.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Home & Family",
+  "target_vm": "VM104",
+  "tags": [
+    "family",
+    "genealogy"
+  ],
+  "ports": [
+    "5000"
+  ],
+  "image": "ghcr.io/gramps-project/grampsweb:latest",
+  "maturity": "starter",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

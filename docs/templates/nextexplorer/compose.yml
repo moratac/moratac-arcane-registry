@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/nextexplorer.svg
+
+services:
+  nextexplorer:
+    image: ghcr.io/nxzai/nextexplorer:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${NEXTEXPLORER_PORT_1:-8098}:8098"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - nextexplorer-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  nextexplorer-config:

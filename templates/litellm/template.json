@@ -1,0 +1,26 @@
+{
+  "id": "litellm",
+  "name": "LiteLLM",
+  "description": "LLM gateway/proxy.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Search & RAG",
+  "target_vm": "VM103",
+  "tags": [
+    "llm",
+    "gateway",
+    "proxy"
+  ],
+  "ports": [
+    "4000"
+  ],
+  "image": "ghcr.io/berriai/litellm:main-latest",
+  "maturity": "starter",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/babelduck.svg
+
+# IMPORTANT: Starter template for BabelDuck.
+# Review official production compose before deploying.
+services:
+  babelduck:
+    image: placeholder/manual
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${BABELDUCK_PORT_1:-3007}:3007"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - babelduck-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  babelduck-data:

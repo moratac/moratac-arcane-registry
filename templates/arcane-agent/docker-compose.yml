@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/arcane-agent.svg
+
+# IMPORTANT: Starter template for Arcane Agent.
+# Review official production compose before deploying.
+services:
+  arcane-agent:
+    image: ghcr.io/getarcaneapp/arcane-agent:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${ARCANE_AGENT_PORT_1:-3553}:3553"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - arcane-agent-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  arcane-agent-data:

@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/radarr.svg
+
+services:
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${RADARR_PORT_1:-7878}:7878"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - radarr-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  radarr-config:

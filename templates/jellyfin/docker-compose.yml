@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/jellyfin.svg
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${JELLYFIN_PORT_1:-8096}:8096"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - jellyfin-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  jellyfin-config:

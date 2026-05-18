@@ -1,0 +1,18 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/docker-android.svg
+
+services:
+  docker-android:
+    image: budtmo/docker-android:emulator_14.0
+    pull_policy: always
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - "${DOCKER_ANDROID_WEB_PORT:-6080}:6080"
+      - "${DOCKER_ANDROID_ADB_PORT:-5555}:5555"
+    environment:
+      - EMULATOR_DEVICE=${EMULATOR_DEVICE:-Samsung Galaxy S10}
+      - WEB_VNC=true
+      - TZ=${TZ:-UTC}
+    volumes:
+      - ${DATA_PATH:-./data}:/home/androidusr

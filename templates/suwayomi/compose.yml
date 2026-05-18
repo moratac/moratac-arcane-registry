@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/suwayomi.svg
+
+services:
+  suwayomi:
+    image: ghcr.io/suwayomi/tachidesk:stable
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${SUWAYOMI_PORT_1:-4567}:4567"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - suwayomi-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  suwayomi-config:

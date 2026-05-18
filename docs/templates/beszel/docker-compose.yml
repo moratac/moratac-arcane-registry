@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/beszel.svg
+
+services:
+  beszel:
+    image: henrygd/beszel:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${BESZEL_PORT_1:-8090}:8090"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - beszel-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  beszel-config:

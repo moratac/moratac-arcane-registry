@@ -1,0 +1,18 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/qdrant.svg
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${QDRANT_PORT_1:-6333}:6333"
+      - "${QDRANT_PORT_2:-6334}:6334"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - qdrant-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  qdrant-config:

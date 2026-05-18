@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/searxng.svg
+
+services:
+  searxng:
+    image: searxng/searxng:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${SEARXNG_PORT_1:-8087}:8087"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - searxng-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  searxng-config:

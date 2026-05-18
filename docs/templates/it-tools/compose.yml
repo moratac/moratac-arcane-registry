@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/it-tools.svg
+
+services:
+  it-tools:
+    image: corentinth/it-tools:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${IT_TOOLS_PORT_1:-8089}:8089"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - it-tools-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  it-tools-config:

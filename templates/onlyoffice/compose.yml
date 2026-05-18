@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/onlyoffice.svg
+
+services:
+  onlyoffice:
+    image: onlyoffice/documentserver:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${ONLYOFFICE_PORT_1:-8086}:8086"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - onlyoffice-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  onlyoffice-config:

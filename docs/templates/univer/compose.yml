@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/univer.svg
+
+# IMPORTANT: Starter template for Univer.
+# Review official production compose before deploying.
+services:
+  univer:
+    image: univer-acr-registry.cn-shenzhen.cr.aliyuncs.com/release/univer:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${UNIVER_PORT_1:-3010}:3010"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - univer-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  univer-data:

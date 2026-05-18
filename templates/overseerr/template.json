@@ -1,0 +1,27 @@
+{
+  "id": "overseerr",
+  "name": "Overseerr",
+  "category": "Download & ARR",
+  "target_vm": "VM102",
+  "ports": [
+    "5056"
+  ],
+  "image": "lscr.io/linuxserver/overseerr:latest",
+  "description": "Media request portal commonly used with Plex/Radarr/Sonarr; can still fit broader ARR workflows.",
+  "tags": [
+    "requests",
+    "arr",
+    "media"
+  ],
+  "maturity": "ready",
+  "complexity_note": "Good one-click candidate; best with Plex but useful as request-portal reference.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

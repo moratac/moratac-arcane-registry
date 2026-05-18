@@ -1,0 +1,25 @@
+{
+  "id": "gameyfin",
+  "name": "Gameyfin",
+  "description": "Game library and download/share manager.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Gaming & Retro",
+  "target_vm": "VM102",
+  "tags": [
+    "games",
+    "library"
+  ],
+  "ports": [
+    "8080"
+  ],
+  "image": "ghcr.io/gameyfin/gameyfin:latest",
+  "maturity": "starter",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "diun",
+  "name": "Diun",
+  "description": "Docker image update notifier.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Monitoring",
+  "target_vm": "VM101",
+  "tags": [
+    "docker",
+    "updates",
+    "notifications"
+  ],
+  "ports": [],
+  "image": "crazymax/diun:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

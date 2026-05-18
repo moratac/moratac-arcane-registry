@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/caddy-manager.svg
+
+services:
+  caddy-manager:
+    image: caddymanager/caddymanager-frontend:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${CADDY_MANAGER_PORT_1:-8099}:8099"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - caddy-manager-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  caddy-manager-config:

@@ -1,0 +1,57 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/authentik.svg
+
+services:
+  authentik-db:
+    image: postgres:16-alpine
+    pull_policy: always
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: authentik
+      POSTGRES_USER: authentik
+      POSTGRES_PASSWORD: ${AUTHENTIK_DB_PASSWORD}
+    volumes:
+      - authentik-db:/var/lib/postgresql/data
+  authentik-server:
+    image: ghcr.io/goauthentik/server:${AUTHENTIK_VERSION:-2026.2.2}
+    pull_policy: always
+    command: server
+    restart: unless-stopped
+    depends_on:
+      - authentik-db
+    ports:
+      - "${AUTHENTIK_HTTP_PORT:-9000}:9000"
+      - "${AUTHENTIK_HTTPS_PORT:-9443}:9443"
+    environment:
+      AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY}
+      AUTHENTIK_POSTGRESQL__HOST: authentik-db
+      AUTHENTIK_POSTGRESQL__USER: authentik
+      AUTHENTIK_POSTGRESQL__NAME: authentik
+      AUTHENTIK_POSTGRESQL__PASSWORD: ${AUTHENTIK_DB_PASSWORD}
+    volumes:
+      - authentik-media:/media
+      - authentik-templates:/templates
+  authentik-worker:
+    image: ghcr.io/goauthentik/server:${AUTHENTIK_VERSION:-2026.2.2}
+    pull_policy: always
+    command: worker
+    restart: unless-stopped
+    depends_on:
+      - authentik-db
+    user: root
+    environment:
+      AUTHENTIK_SECRET_KEY: ${AUTHENTIK_SECRET_KEY}
+      AUTHENTIK_POSTGRESQL__HOST: authentik-db
+      AUTHENTIK_POSTGRESQL__USER: authentik
+      AUTHENTIK_POSTGRESQL__NAME: authentik
+      AUTHENTIK_POSTGRESQL__PASSWORD: ${AUTHENTIK_DB_PASSWORD}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - authentik-media:/media
+      - authentik-certs:/certs
+      - authentik-templates:/templates
+volumes:
+  authentik-db:
+  authentik-media:
+  authentik-certs:
+  authentik-templates:

@@ -1,0 +1,1910 @@
+[
+  {
+    "id": "anythingllm",
+    "name": "AnythingLLM",
+    "description": "Private RAG and AI workspace.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI & Automation",
+    "target_vm": "VM103",
+    "tags": [
+      "ai",
+      "rag",
+      "llm"
+    ],
+    "ports": [
+      "3002"
+    ],
+    "image": "mintplexlabs/anythingllm:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "babelduck",
+    "name": "BabelDuck",
+    "description": "AI language/productivity tool placeholder; verify upstream image before use.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI & Automation",
+    "target_vm": "VM103",
+    "tags": [
+      "ai",
+      "productivity",
+      "language"
+    ],
+    "ports": [
+      "3007"
+    ],
+    "image": "placeholder/manual",
+    "maturity": "external",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "dify",
+    "name": "Dify",
+    "description": "LLM app platform. Full production stack requires multiple services.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI & Automation",
+    "target_vm": "VM103",
+    "tags": [
+      "ai",
+      "rag",
+      "workflow"
+    ],
+    "ports": [
+      "8088"
+    ],
+    "image": "langgenius/dify-api:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "hermes-agent",
+    "name": "Hermes Agent",
+    "description": "Hermes Agent. Verify official image and compose before production use.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI & Automation",
+    "target_vm": "VM103",
+    "tags": [
+      "ai",
+      "agent"
+    ],
+    "ports": [
+      "9120"
+    ],
+    "image": "ghcr.io/nousresearch/hermes-agent:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "open-webui",
+    "name": "Open WebUI",
+    "description": "Web UI for Ollama and OpenAI-compatible APIs.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI & Automation",
+    "target_vm": "VM103",
+    "tags": [
+      "ai",
+      "llm",
+      "webui"
+    ],
+    "ports": [
+      "3001"
+    ],
+    "image": "ghcr.io/open-webui/open-webui:main",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "openclaw",
+    "name": "OpenClaw",
+    "description": "AI agent platform. High privilege; review official docs before deploy.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI & Automation",
+    "target_vm": "VM103",
+    "tags": [
+      "ai",
+      "agent",
+      "high-privilege"
+    ],
+    "ports": [
+      "9123"
+    ],
+    "image": "openclaw/openclaw:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "n8n",
+    "name": "n8n",
+    "description": "Workflow automation.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI & Automation",
+    "target_vm": "VM103",
+    "tags": [
+      "automation",
+      "workflow",
+      "ai"
+    ],
+    "ports": [
+      "5678"
+    ],
+    "image": "n8nio/n8n:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "lm-studio",
+    "name": "LM Studio",
+    "description": "LM Studio is usually desktop-native; template is an external service placeholder.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI Inference",
+    "target_vm": "Mac/VM103",
+    "tags": [
+      "ai",
+      "llm",
+      "external"
+    ],
+    "ports": [
+      "1234"
+    ],
+    "image": "placeholder/manual",
+    "maturity": "external",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "sglang",
+    "name": "SGLang",
+    "description": "High-performance LLM serving runtime. GPU recommended.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI Inference",
+    "target_vm": "VM103",
+    "tags": [
+      "ai",
+      "llm",
+      "inference",
+      "gpu"
+    ],
+    "ports": [
+      "30000"
+    ],
+    "image": "lmsysorg/sglang:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "llama-cpp",
+    "name": "llama.cpp Server",
+    "description": "llama.cpp HTTP server. CPU/GPU variants may differ.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI Inference",
+    "target_vm": "VM103",
+    "tags": [
+      "ai",
+      "llm",
+      "inference"
+    ],
+    "ports": [
+      "8085"
+    ],
+    "image": "ghcr.io/ggml-org/llama.cpp:server",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "vllm",
+    "name": "vLLM",
+    "description": "High-throughput OpenAI-compatible LLM inference server. GPU recommended.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "AI Inference",
+    "target_vm": "VM103",
+    "tags": [
+      "ai",
+      "llm",
+      "inference",
+      "gpu"
+    ],
+    "ports": [
+      "8000"
+    ],
+    "image": "vllm/vllm-openai:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "actual-budget",
+    "name": "Actual Budget",
+    "description": "Self-hosted personal budgeting app.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Business & Finance",
+    "target_vm": "VM104",
+    "tags": [
+      "finance",
+      "budget"
+    ],
+    "ports": [
+      "5006"
+    ],
+    "image": "actualbudget/actual-server:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "ghostfolio",
+    "name": "Ghostfolio",
+    "description": "Personal finance dashboard. Requires database/Redis for production.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Business & Finance",
+    "target_vm": "VM104",
+    "tags": [
+      "finance",
+      "portfolio"
+    ],
+    "ports": [
+      "3333"
+    ],
+    "image": "ghostfolio/ghostfolio:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "odoo",
+    "name": "Odoo",
+    "description": "Business apps / ERP. Includes Postgres service.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Business & Finance",
+    "target_vm": "VM104",
+    "tags": [
+      "business",
+      "erp"
+    ],
+    "ports": [
+      "8069"
+    ],
+    "image": "odoo:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "wallos",
+    "name": "Wallos",
+    "description": "Subscription and recurring expense tracker.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Business & Finance",
+    "target_vm": "VM104",
+    "tags": [
+      "finance",
+      "subscriptions"
+    ],
+    "ports": [
+      "8282"
+    ],
+    "image": "bellamy/wallos:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "homarr",
+    "name": "Homarr",
+    "description": "Dashboard for homelab services.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Dashboard",
+    "target_vm": "VM101",
+    "tags": [
+      "dashboard",
+      "homelab"
+    ],
+    "ports": [
+      "7575"
+    ],
+    "image": "ghcr.io/homarr-labs/homarr:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "homepage",
+    "name": "Homepage",
+    "description": "Highly customizable application dashboard.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Dashboard",
+    "target_vm": "VM101",
+    "tags": [
+      "dashboard",
+      "homepage"
+    ],
+    "ports": [
+      "3000"
+    ],
+    "image": "ghcr.io/gethomepage/homepage:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "brave-browser",
+    "name": "Brave Browser",
+    "description": "Brave browser in container.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Developer Tools",
+    "target_vm": "VM104",
+    "tags": [
+      "browser",
+      "remote"
+    ],
+    "ports": [
+      "3006"
+    ],
+    "image": "lscr.io/linuxserver/brave:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "chrome-browser",
+    "name": "Chrome Browser",
+    "description": "Browser in container. Chromium image used as Chrome-compatible option.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Developer Tools",
+    "target_vm": "VM104",
+    "tags": [
+      "browser",
+      "remote"
+    ],
+    "ports": [
+      "3005"
+    ],
+    "image": "lscr.io/linuxserver/chromium:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "code-server",
+    "name": "Code Server",
+    "description": "VS Code in browser.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Developer Tools",
+    "target_vm": "VM104",
+    "tags": [
+      "dev",
+      "ide"
+    ],
+    "ports": [
+      "8444"
+    ],
+    "image": "lscr.io/linuxserver/code-server:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "it-tools",
+    "name": "IT-Tools",
+    "description": "Useful developer and sysadmin web tools.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Developer Tools",
+    "target_vm": "VM101/VM104",
+    "tags": [
+      "tools",
+      "developer"
+    ],
+    "ports": [
+      "8089"
+    ],
+    "image": "corentinth/it-tools:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "redroid",
+    "name": "redroid",
+    "description": "Android in Docker. Requires privileged/kernel binder support.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Developer Tools",
+    "target_vm": "VM104",
+    "tags": [
+      "android",
+      "emulator",
+      "high-privilege"
+    ],
+    "ports": [
+      "5555"
+    ],
+    "image": "redroid/redroid:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "gitlab-ce",
+    "name": "GitLab CE",
+    "description": "Full-featured self-hosted GitLab Community Edition.",
+    "version": "0.4.0",
+    "author": "Moratac Arcane Registry",
+    "category": "Developer Tools / DevOps",
+    "target_vm": "VM104",
+    "tags": [
+      "git",
+      "devops",
+      "ci",
+      "scm"
+    ],
+    "ports": [
+      "8929",
+      "2224"
+    ],
+    "image": "gitlab/gitlab-ce:latest",
+    "maturity": "review",
+    "complexity_note": "Heavy. Recommend dedicated VM with at least 4C/8G RAM. Review before deployment.",
+    "updated_at": "2026-05-16T08:09:49Z"
+  },
+  {
+    "id": "gitea",
+    "name": "Gitea Server",
+    "description": "Lightweight self-hosted Git server. Best first choice for homelab Git.",
+    "version": "0.4.0",
+    "author": "Moratac Arcane Registry",
+    "category": "Developer Tools / DevOps",
+    "target_vm": "VM104/VM101",
+    "tags": [
+      "git",
+      "devops",
+      "scm"
+    ],
+    "ports": [
+      "3000",
+      "2222"
+    ],
+    "image": "gitea/gitea:latest",
+    "maturity": "ready",
+    "complexity_note": "Good one-click candidate. Set ROOT_URL and SSH port before production.",
+    "updated_at": "2026-05-16T08:09:49Z"
+  },
+  {
+    "id": "gogs",
+    "name": "Gogs",
+    "description": "Very lightweight self-hosted Git service.",
+    "version": "0.4.0",
+    "author": "Moratac Arcane Registry",
+    "category": "Developer Tools / DevOps",
+    "target_vm": "VM104",
+    "tags": [
+      "git",
+      "devops",
+      "scm"
+    ],
+    "ports": [
+      "3000",
+      "2222"
+    ],
+    "image": "gogs/gogs:latest",
+    "maturity": "ready",
+    "complexity_note": "Good one-click candidate. Lighter than Gitea, smaller ecosystem.",
+    "updated_at": "2026-05-16T08:09:49Z"
+  },
+  {
+    "id": "aria2-pro",
+    "name": "Aria2 Pro",
+    "description": "Aria2 downloader with RPC support.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "download",
+      "aria2"
+    ],
+    "ports": [
+      "6800"
+    ],
+    "image": "p3terx/aria2-pro:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "ariang",
+    "name": "AriaNg",
+    "description": "Web UI for Aria2.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "download",
+      "aria2",
+      "ui"
+    ],
+    "ports": [
+      "6880"
+    ],
+    "image": "p3terx/ariang:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "bazarr",
+    "name": "Bazarr",
+    "description": "Subtitle management for Sonarr/Radarr.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "arr",
+      "subtitles",
+      "media"
+    ],
+    "ports": [
+      "6767"
+    ],
+    "image": "lscr.io/linuxserver/bazarr:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "jellyseerr",
+    "name": "Jellyseerr",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "ports": [
+      "5055"
+    ],
+    "image": "fallenbagel/jellyseerr:latest",
+    "description": "Media request portal for Jellyfin, Sonarr, and Radarr.",
+    "tags": [
+      "jellyfin",
+      "requests",
+      "arr",
+      "media"
+    ],
+    "maturity": "ready",
+    "complexity_note": "Good one-click candidate; connect to Jellyfin, Sonarr, and Radarr after deployment.",
+    "version": "0.5.0",
+    "author": "Moratac Arcane Registry",
+    "updated_at": "2026-05-16T09:03:30Z"
+  },
+  {
+    "id": "metube",
+    "name": "MeTube",
+    "description": "Web UI for yt-dlp video downloads.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "youtube",
+      "download",
+      "yt-dlp"
+    ],
+    "ports": [
+      "8084"
+    ],
+    "image": "ghcr.io/alexta69/metube:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "moviepilot-v2",
+    "name": "MoviePilot v2",
+    "description": "Chinese media automation ecosystem. Needs careful env setup.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "arr",
+      "media",
+      "automation"
+    ],
+    "ports": [
+      "3000"
+    ],
+    "image": "jxxghp/moviepilot-v2:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "overseerr",
+    "name": "Overseerr",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "ports": [
+      "5056"
+    ],
+    "image": "lscr.io/linuxserver/overseerr:latest",
+    "description": "Media request portal commonly used with Plex/Radarr/Sonarr; can still fit broader ARR workflows.",
+    "tags": [
+      "requests",
+      "arr",
+      "media"
+    ],
+    "maturity": "ready",
+    "complexity_note": "Good one-click candidate; best with Plex but useful as request-portal reference.",
+    "version": "0.5.0",
+    "author": "Moratac Arcane Registry",
+    "updated_at": "2026-05-16T09:03:30Z"
+  },
+  {
+    "id": "pinchflat",
+    "name": "Pinchflat",
+    "description": "YouTube channel/playlist downloader designed for media-server integration.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "youtube",
+      "download",
+      "media"
+    ],
+    "ports": [
+      "8945"
+    ],
+    "image": "ghcr.io/kieraneglin/pinchflat:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "prowlarr",
+    "name": "Prowlarr",
+    "description": "Indexer manager for ARR stack.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "arr",
+      "indexer",
+      "media"
+    ],
+    "ports": [
+      "9696"
+    ],
+    "image": "lscr.io/linuxserver/prowlarr:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "radarr",
+    "name": "Radarr",
+    "description": "Movie management.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "arr",
+      "movies",
+      "media"
+    ],
+    "ports": [
+      "7878"
+    ],
+    "image": "lscr.io/linuxserver/radarr:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "sonarr",
+    "name": "Sonarr",
+    "description": "TV series management.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "arr",
+      "tv",
+      "media"
+    ],
+    "ports": [
+      "8989"
+    ],
+    "image": "lscr.io/linuxserver/sonarr:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "transmission",
+    "name": "Transmission",
+    "description": "BitTorrent client.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "torrent",
+      "download"
+    ],
+    "ports": [
+      "9091",
+      "51413"
+    ],
+    "image": "lscr.io/linuxserver/transmission:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "qbittorrent",
+    "name": "qBittorrent",
+    "description": "BitTorrent client.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Download & ARR",
+    "target_vm": "VM102",
+    "tags": [
+      "torrent",
+      "download"
+    ],
+    "ports": [
+      "8083",
+      "6881"
+    ],
+    "image": "lscr.io/linuxserver/qbittorrent:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "gameyfin",
+    "name": "Gameyfin",
+    "description": "Game library and download/share manager.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Gaming & Retro",
+    "target_vm": "VM102",
+    "tags": [
+      "games",
+      "library"
+    ],
+    "ports": [
+      "8080"
+    ],
+    "image": "ghcr.io/gameyfin/gameyfin:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "retroassembly",
+    "name": "RetroAssembly",
+    "description": "Browser-based retro game cabinet for personal ROM collections.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Gaming & Retro",
+    "target_vm": "VM102",
+    "tags": [
+      "roms",
+      "retro",
+      "games"
+    ],
+    "ports": [
+      "8080"
+    ],
+    "image": "arianrhodsandlot/retroassembly:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "romm",
+    "name": "RomM",
+    "description": "ROM library manager with metadata and browser play support. Full stack requires DB/Redis in production.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Gaming & Retro",
+    "target_vm": "VM102",
+    "tags": [
+      "roms",
+      "retro",
+      "games",
+      "library"
+    ],
+    "ports": [
+      "8080"
+    ],
+    "image": "rommapp/romm:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "webrcade",
+    "name": "webRcade",
+    "description": "Web-based retro gaming frontend placeholder; mount built webRcade files.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Gaming & Retro",
+    "target_vm": "VM102",
+    "tags": [
+      "retro",
+      "games",
+      "frontend"
+    ],
+    "ports": [
+      "8080"
+    ],
+    "image": "nginx:alpine",
+    "maturity": "external",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "gramps-web",
+    "name": "Gramps Web",
+    "description": "Family tree and genealogy web app.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Home & Family",
+    "target_vm": "VM104",
+    "tags": [
+      "family",
+      "genealogy"
+    ],
+    "ports": [
+      "5000"
+    ],
+    "image": "ghcr.io/gramps-project/grampsweb:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "grocy",
+    "name": "Grocy",
+    "description": "Home ERP for pantry, groceries, chores, and inventory.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Home & Family",
+    "target_vm": "VM104",
+    "tags": [
+      "home",
+      "erp",
+      "inventory"
+    ],
+    "ports": [
+      "9283"
+    ],
+    "image": "lscr.io/linuxserver/grocy:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "homebox",
+    "name": "Homebox",
+    "description": "Home inventory and asset manager.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Home & Family",
+    "target_vm": "VM104",
+    "tags": [
+      "home",
+      "inventory",
+      "assets"
+    ],
+    "ports": [
+      "7745"
+    ],
+    "image": "ghcr.io/sysadminsmedia/homebox:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "monica",
+    "name": "Monica",
+    "description": "Personal CRM.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Home & Family",
+    "target_vm": "VM104",
+    "tags": [
+      "crm",
+      "personal"
+    ],
+    "ports": [
+      "8088"
+    ],
+    "image": "monica:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "emby",
+    "name": "Emby",
+    "description": "Media server alternative to Jellyfin.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Media",
+    "target_vm": "VM102",
+    "tags": [
+      "media",
+      "video",
+      "streaming"
+    ],
+    "ports": [
+      "8096",
+      "8920"
+    ],
+    "image": "lscr.io/linuxserver/emby:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "immich",
+    "name": "Immich",
+    "description": "Photo and video backup system. Full stack requires Postgres and Redis.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Media",
+    "target_vm": "VM102",
+    "tags": [
+      "photos",
+      "media",
+      "backup"
+    ],
+    "ports": [
+      "2283"
+    ],
+    "image": "ghcr.io/immich-app/immich-server:release",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "jellyfin",
+    "name": "Jellyfin",
+    "description": "Media server.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Media",
+    "target_vm": "VM102",
+    "tags": [
+      "media",
+      "video",
+      "streaming"
+    ],
+    "ports": [
+      "8096"
+    ],
+    "image": "jellyfin/jellyfin:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "kavita",
+    "name": "Kavita",
+    "description": "Reading server for manga, comics, and books.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Media",
+    "target_vm": "VM102",
+    "tags": [
+      "books",
+      "manga",
+      "media"
+    ],
+    "ports": [
+      "5000"
+    ],
+    "image": "jvmilazz0/kavita:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "komga",
+    "name": "Komga",
+    "description": "Comics and manga server.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Media",
+    "target_vm": "VM102",
+    "tags": [
+      "comics",
+      "manga",
+      "media"
+    ],
+    "ports": [
+      "25600"
+    ],
+    "image": "gotson/komga:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "lanraragi",
+    "name": "LANraragi",
+    "description": "Archive and manga/doujin library manager.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Media",
+    "target_vm": "VM102",
+    "tags": [
+      "manga",
+      "archive",
+      "media"
+    ],
+    "ports": [
+      "3000"
+    ],
+    "image": "difegue/lanraragi:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "libretv",
+    "name": "LibreTV",
+    "description": "Video aggregation app; source availability may be unstable.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Media",
+    "target_vm": "VM102",
+    "tags": [
+      "media",
+      "video",
+      "unstable-source"
+    ],
+    "ports": [
+      "8899"
+    ],
+    "image": "bestzwei/libretv:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "mediacms",
+    "name": "MediaCMS",
+    "category": "Media",
+    "target_vm": "VM102",
+    "ports": [
+      "8089"
+    ],
+    "image": "mediacms/mediacms:latest",
+    "description": "Self-hosted video CMS, like a private YouTube for personal, family, learning, or dataset videos.",
+    "tags": [
+      "video",
+      "cms",
+      "youtube-like",
+      "media"
+    ],
+    "maturity": "review",
+    "complexity_note": "Production deployment may need Postgres, Redis, workers, and transcoding tuning.",
+    "version": "0.5.0",
+    "author": "Moratac Arcane Registry",
+    "updated_at": "2026-05-16T09:03:30Z"
+  },
+  {
+    "id": "streamyfin",
+    "name": "Streamyfin",
+    "description": "Enhanced Jellyfin client ecosystem. Usually client-side/mobile; template is a placeholder/link entry.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Media",
+    "target_vm": "VM102",
+    "tags": [
+      "jellyfin",
+      "client",
+      "media"
+    ],
+    "ports": [
+      "8097"
+    ],
+    "image": "placeholder/manual",
+    "maturity": "external",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "suwayomi",
+    "name": "Suwayomi",
+    "description": "Manga source server.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Media",
+    "target_vm": "VM102",
+    "tags": [
+      "manga",
+      "media"
+    ],
+    "ports": [
+      "4567"
+    ],
+    "image": "ghcr.io/suwayomi/tachidesk:stable",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "tdarr",
+    "name": "Tdarr",
+    "category": "Media",
+    "target_vm": "VM102",
+    "ports": [
+      "8265",
+      "8266"
+    ],
+    "image": "ghcr.io/haveagitgat/tdarr:latest",
+    "description": "Distributed video transcoding, library optimization, and codec normalization platform.",
+    "tags": [
+      "transcoding",
+      "video",
+      "optimization",
+      "media"
+    ],
+    "maturity": "review",
+    "complexity_note": "Needs careful library path mapping and optional GPU transcoding setup.",
+    "version": "0.5.0",
+    "author": "Moratac Arcane Registry",
+    "updated_at": "2026-05-16T09:03:30Z"
+  },
+  {
+    "id": "tubearchivist",
+    "name": "TubeArchivist",
+    "category": "Media",
+    "target_vm": "VM102",
+    "ports": [
+      "8000"
+    ],
+    "image": "bbilly1/tubearchivist:latest",
+    "description": "Self-hosted YouTube archive with metadata, channel sync, subtitles, and indexing.",
+    "tags": [
+      "youtube",
+      "archive",
+      "video",
+      "metadata"
+    ],
+    "maturity": "review",
+    "complexity_note": "Needs companion services such as Redis/Elasticsearch in production; use for content you have rights to archive.",
+    "version": "0.5.0",
+    "author": "Moratac Arcane Registry",
+    "updated_at": "2026-05-16T09:03:30Z"
+  },
+  {
+    "id": "unmanic",
+    "name": "Unmanic",
+    "category": "Media",
+    "target_vm": "VM102",
+    "ports": [
+      "8888"
+    ],
+    "image": "josh5/unmanic:latest",
+    "description": "Simple automatic video library optimizer/transcoder.",
+    "tags": [
+      "transcoding",
+      "video",
+      "optimization",
+      "media"
+    ],
+    "maturity": "starter",
+    "complexity_note": "Easier than Tdarr, but still needs careful media path and plugin setup.",
+    "version": "0.5.0",
+    "author": "Moratac Arcane Registry",
+    "updated_at": "2026-05-16T09:03:30Z"
+  },
+  {
+    "id": "beszel",
+    "name": "Beszel",
+    "description": "Lightweight server monitoring hub.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Monitoring",
+    "target_vm": "VM101",
+    "tags": [
+      "monitoring",
+      "metrics",
+      "server"
+    ],
+    "ports": [
+      "8090"
+    ],
+    "image": "henrygd/beszel:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "diun",
+    "name": "Diun",
+    "description": "Docker image update notifier.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Monitoring",
+    "target_vm": "VM101",
+    "tags": [
+      "docker",
+      "updates",
+      "notifications"
+    ],
+    "ports": [],
+    "image": "crazymax/diun:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "dozzle",
+    "name": "Dozzle",
+    "description": "Real-time Docker logs viewer.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Monitoring",
+    "target_vm": "VM101",
+    "tags": [
+      "logs",
+      "docker",
+      "monitoring"
+    ],
+    "ports": [
+      "8081"
+    ],
+    "image": "amir20/dozzle:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "gospeed",
+    "name": "GoSpeed",
+    "description": "Network speed test / file transfer helper.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Monitoring",
+    "target_vm": "VM101/VM102",
+    "tags": [
+      "network",
+      "speedtest",
+      "go"
+    ],
+    "ports": [
+      "5443"
+    ],
+    "image": "sunny0826/gospeed:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana",
+    "description": "Observability dashboard platform.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Monitoring",
+    "target_vm": "VM101",
+    "tags": [
+      "monitoring",
+      "metrics",
+      "dashboard"
+    ],
+    "ports": [
+      "3003"
+    ],
+    "image": "grafana/grafana:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "hertzbeat",
+    "name": "HertzBeat",
+    "description": "Universal monitoring platform for HTTP, DB, network, and services.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Monitoring",
+    "target_vm": "VM101",
+    "tags": [
+      "monitoring",
+      "alerting"
+    ],
+    "ports": [
+      "1157"
+    ],
+    "image": "apache/hertzbeat:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "netdata",
+    "name": "Netdata",
+    "description": "Real-time infrastructure monitoring.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Monitoring",
+    "target_vm": "VM101",
+    "tags": [
+      "monitoring",
+      "metrics",
+      "realtime"
+    ],
+    "ports": [
+      "19999"
+    ],
+    "image": "netdata/netdata:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "uptime-kuma",
+    "name": "Uptime Kuma",
+    "description": "Self-hosted uptime monitoring.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Monitoring",
+    "target_vm": "VM101",
+    "tags": [
+      "monitoring",
+      "uptime",
+      "status"
+    ],
+    "ports": [
+      "8125"
+    ],
+    "image": "louislam/uptime-kuma:1",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "watchtower",
+    "name": "Watchtower",
+    "description": "Docker auto-update tool. Recommended notification-only mode first.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Monitoring",
+    "target_vm": "VM101",
+    "tags": [
+      "docker",
+      "updates"
+    ],
+    "ports": [],
+    "image": "containrrr/watchtower:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "virtual-dsm",
+    "name": "Virtual DSM",
+    "description": "Virtual Synology DSM. Requires KVM/privileged setup; experimental.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "NAS Infrastructure",
+    "target_vm": "VM104",
+    "tags": [
+      "nas",
+      "virtualization",
+      "experimental"
+    ],
+    "ports": [
+      "5000",
+      "5001"
+    ],
+    "image": "vdsm/virtual-dsm:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "caddy-manager",
+    "name": "Caddy Manager",
+    "description": "UI for managing Caddy configuration.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Networking & Reverse Proxy",
+    "target_vm": "VM101",
+    "tags": [
+      "proxy",
+      "caddy",
+      "ui"
+    ],
+    "ports": [
+      "8099"
+    ],
+    "image": "caddymanager/caddymanager-frontend:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "caddy",
+    "name": "Caddy Server",
+    "description": "Caddy web server and reverse proxy.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Networking & Reverse Proxy",
+    "target_vm": "VM101",
+    "tags": [
+      "proxy",
+      "tls",
+      "networking",
+      "go"
+    ],
+    "ports": [
+      "8088",
+      "8443",
+      "2019"
+    ],
+    "image": "caddy:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "cloudflare-tunnel",
+    "name": "Cloudflare Tunnel",
+    "description": "Cloudflare Tunnel connector.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Networking & Reverse Proxy",
+    "target_vm": "VM101",
+    "tags": [
+      "tunnel",
+      "cloudflare",
+      "networking"
+    ],
+    "ports": [],
+    "image": "cloudflare/cloudflared:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "lancache",
+    "name": "LanCache",
+    "description": "LAN cache for game/platform downloads. Requires DNS planning.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Networking & Reverse Proxy",
+    "target_vm": "VM102",
+    "tags": [
+      "cache",
+      "gaming",
+      "network"
+    ],
+    "ports": [
+      "80",
+      "443"
+    ],
+    "image": "lancachenet/monolithic:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "tailscale",
+    "name": "Tailscale",
+    "description": "Mesh VPN. Usually installed on host OS; Docker template included for subnet-router/container cases.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Networking & Reverse Proxy",
+    "target_vm": "All VMs",
+    "tags": [
+      "vpn",
+      "networking",
+      "mesh"
+    ],
+    "ports": [],
+    "image": "tailscale/tailscale:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "collabora-code",
+    "name": "Collabora CODE",
+    "description": "LibreOffice Online / Collabora document server.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Office & Collaboration",
+    "target_vm": "VM104",
+    "tags": [
+      "office",
+      "libreoffice",
+      "collaboration"
+    ],
+    "ports": [
+      "9980"
+    ],
+    "image": "collabora/code:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "onlyoffice",
+    "name": "OnlyOffice Docs",
+    "description": "Online office document server.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Office & Collaboration",
+    "target_vm": "VM104",
+    "tags": [
+      "office",
+      "documents"
+    ],
+    "ports": [
+      "8086"
+    ],
+    "image": "onlyoffice/documentserver:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "univer",
+    "name": "Univer",
+    "description": "Open-source office/collaboration suite. Verify upstream image for your region.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Office & Collaboration",
+    "target_vm": "VM104",
+    "tags": [
+      "office",
+      "spreadsheet",
+      "collaboration"
+    ],
+    "ports": [
+      "3010"
+    ],
+    "image": "univer-acr-registry.cn-shenzhen.cr.aliyuncs.com/release/univer:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "arcane",
+    "name": "Arcane",
+    "description": "Modern Docker management control plane.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Platform",
+    "target_vm": "VM101/VM104",
+    "tags": [
+      "platform",
+      "docker",
+      "control-plane",
+      "go"
+    ],
+    "ports": [
+      "3552"
+    ],
+    "image": "ghcr.io/getarcaneapp/arcane:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "arcane-agent",
+    "name": "Arcane Agent",
+    "description": "Arcane remote Docker host agent. Verify official pairing flow.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Platform",
+    "target_vm": "All Docker VMs",
+    "tags": [
+      "docker",
+      "agent",
+      "control-plane"
+    ],
+    "ports": [
+      "3553"
+    ],
+    "image": "ghcr.io/getarcaneapp/arcane-agent:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "langfuse",
+    "name": "Langfuse",
+    "description": "LLM observability. Production stack requires supporting services.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Search & RAG",
+    "target_vm": "VM103",
+    "tags": [
+      "llmops",
+      "observability",
+      "ai"
+    ],
+    "ports": [
+      "3004"
+    ],
+    "image": "langfuse/langfuse:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "litellm",
+    "name": "LiteLLM",
+    "description": "LLM gateway/proxy.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Search & RAG",
+    "target_vm": "VM103",
+    "tags": [
+      "llm",
+      "gateway",
+      "proxy"
+    ],
+    "ports": [
+      "4000"
+    ],
+    "image": "ghcr.io/berriai/litellm:main-latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "qdrant",
+    "name": "Qdrant",
+    "description": "Vector database for AI/RAG.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Search & RAG",
+    "target_vm": "VM103",
+    "tags": [
+      "vector-db",
+      "rag",
+      "ai"
+    ],
+    "ports": [
+      "6333",
+      "6334"
+    ],
+    "image": "qdrant/qdrant:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "searxng",
+    "name": "SearXNG",
+    "description": "Privacy-respecting metasearch engine.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Search & RAG",
+    "target_vm": "VM103",
+    "tags": [
+      "search",
+      "rag",
+      "privacy"
+    ],
+    "ports": [
+      "8087"
+    ],
+    "image": "searxng/searxng:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "2fauth",
+    "name": "2FAuth",
+    "description": "Self-hosted TOTP/2FA account manager.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Security & Identity",
+    "target_vm": "VM101",
+    "tags": [
+      "2fa",
+      "totp",
+      "security"
+    ],
+    "ports": [
+      "8001"
+    ],
+    "image": "2fauth/2fauth:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "authentik",
+    "name": "Authentik",
+    "description": "Identity provider and SSO platform.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Security & Identity",
+    "target_vm": "VM101",
+    "tags": [
+      "sso",
+      "auth",
+      "identity",
+      "security"
+    ],
+    "ports": [
+      "9000",
+      "9443"
+    ],
+    "image": "ghcr.io/goauthentik/server:2026.2.2",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "safeline",
+    "name": "Safeline WAF",
+    "description": "Web application firewall stack. Review official multi-service compose before production.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Security & Identity",
+    "target_vm": "VM101",
+    "tags": [
+      "waf",
+      "security",
+      "reverse-proxy"
+    ],
+    "ports": [
+      "9445"
+    ],
+    "image": "chaitin/safeline-mgt:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "vaultwarden",
+    "name": "Vaultwarden",
+    "description": "Lightweight Bitwarden-compatible password manager.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Security & Identity",
+    "target_vm": "VM101",
+    "tags": [
+      "passwords",
+      "security",
+      "vault"
+    ],
+    "ports": [
+      "8086"
+    ],
+    "image": "vaultwarden/server:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "alist",
+    "name": "AList",
+    "description": "File list and WebDAV gateway for cloud drives and local storage.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Storage & Files",
+    "target_vm": "VM101/VM102",
+    "tags": [
+      "files",
+      "webdav",
+      "cloud-drive"
+    ],
+    "ports": [
+      "5244"
+    ],
+    "image": "xhofe/alist:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "baidunetdisk",
+    "name": "BaiduNetDisk",
+    "description": "Baidu Netdisk desktop client in browser container.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Storage & Files",
+    "target_vm": "VM102",
+    "tags": [
+      "cloud-drive",
+      "baidu",
+      "browser"
+    ],
+    "ports": [
+      "5800"
+    ],
+    "image": "jlesage/baidunetdisk:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "filebrowser",
+    "name": "File Browser",
+    "description": "Web file manager.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Storage & Files",
+    "target_vm": "VM101",
+    "tags": [
+      "files",
+      "browser",
+      "webdav"
+    ],
+    "ports": [
+      "8082"
+    ],
+    "image": "filebrowser/filebrowser:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "nextexplorer",
+    "name": "NextExplorer",
+    "description": "Native file browser for mounted NAS paths.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Storage & Files",
+    "target_vm": "VM101",
+    "tags": [
+      "files",
+      "nas",
+      "browser"
+    ],
+    "ports": [
+      "8098"
+    ],
+    "image": "ghcr.io/nxzai/nextexplorer:latest",
+    "maturity": "starter",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "opencloud",
+    "name": "OpenCloud",
+    "description": "Cloud file collaboration platform. Verify production compose before use.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Storage & Files",
+    "target_vm": "VM101/VM102",
+    "tags": [
+      "cloud",
+      "files",
+      "collaboration"
+    ],
+    "ports": [
+      "9200"
+    ],
+    "image": "opencloudeu/opencloud-rolling:latest",
+    "maturity": "review",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "sftpgo",
+    "name": "SFTPGo",
+    "description": "SFTP, WebDAV and file transfer server.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Storage & Files",
+    "target_vm": "VM101",
+    "tags": [
+      "sftp",
+      "webdav",
+      "files"
+    ],
+    "ports": [
+      "8080",
+      "2022"
+    ],
+    "image": "drakkan/sftpgo:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "resilio-sync",
+    "name": "Resilio Sync",
+    "description": "P2P file synchronization based on BitTorrent technology.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Storage & Sync",
+    "target_vm": "VM101",
+    "tags": [
+      "sync",
+      "p2p",
+      "files"
+    ],
+    "ports": [
+      "8888",
+      "55555"
+    ],
+    "image": "lscr.io/linuxserver/resilio-sync:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  },
+  {
+    "id": "syncthing",
+    "name": "Syncthing",
+    "description": "Open-source peer-to-peer file synchronization.",
+    "version": "0.3.0",
+    "author": "Tony Arcane Registry",
+    "category": "Storage & Sync",
+    "target_vm": "VM101/VM102",
+    "tags": [
+      "sync",
+      "p2p",
+      "files"
+    ],
+    "ports": [
+      "8384",
+      "22000"
+    ],
+    "image": "syncthing/syncthing:latest",
+    "maturity": "ready",
+    "updated_at": "2026-05-15T10:11:00Z"
+  }
+]

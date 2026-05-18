@@ -1,0 +1,24 @@
+{
+  "id": "tailscale",
+  "name": "Tailscale",
+  "description": "Mesh VPN. Usually installed on host OS; Docker template included for subnet-router/container cases.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Networking & Reverse Proxy",
+  "target_vm": "All VMs",
+  "tags": [
+    "vpn",
+    "networking",
+    "mesh"
+  ],
+  "ports": [],
+  "image": "tailscale/tailscale:latest",
+  "maturity": "starter",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

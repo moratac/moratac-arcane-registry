@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/llama-cpp.svg
+
+services:
+  llama-cpp:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${LLAMA_CPP_PORT_1:-8085}:8085"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - llama-cpp-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  llama-cpp-config:

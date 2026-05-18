@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/bazarr.svg
+
+services:
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${BAZARR_PORT_1:-6767}:6767"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - bazarr-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  bazarr-config:

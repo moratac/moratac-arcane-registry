@@ -1,0 +1,25 @@
+{
+  "id": "code-server",
+  "name": "Code Server",
+  "description": "VS Code in browser.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Developer Tools",
+  "target_vm": "VM104",
+  "tags": [
+    "dev",
+    "ide"
+  ],
+  "ports": [
+    "8444"
+  ],
+  "image": "lscr.io/linuxserver/code-server:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "alist",
+  "name": "AList",
+  "description": "File list and WebDAV gateway for cloud drives and local storage.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Storage & Files",
+  "target_vm": "VM101/VM102",
+  "tags": [
+    "files",
+    "webdav",
+    "cloud-drive"
+  ],
+  "ports": [
+    "5244"
+  ],
+  "image": "xhofe/alist:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

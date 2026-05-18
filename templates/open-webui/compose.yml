@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/open-webui.svg
+
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${OPEN_WEBUI_PORT_1:-3001}:3001"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - open-webui-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  open-webui-config:

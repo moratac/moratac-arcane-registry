@@ -1,0 +1,18 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/jellyseerr.svg
+
+services:
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${JELLYSEERR_PORT_1:-5055}:5055"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - jellyseerr-config:/config
+      - ${MEDIA_PATH:-./media}:/media
+
+volumes:
+  jellyseerr-config:

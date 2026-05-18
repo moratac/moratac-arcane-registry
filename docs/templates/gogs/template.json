@@ -1,0 +1,28 @@
+{
+  "id": "gogs",
+  "name": "Gogs",
+  "description": "Very lightweight self-hosted Git service.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Developer Tools / DevOps",
+  "target_vm": "VM104",
+  "tags": [
+    "git",
+    "devops",
+    "scm"
+  ],
+  "ports": [
+    "3000",
+    "2222"
+  ],
+  "image": "gogs/gogs:latest",
+  "maturity": "ready",
+  "complexity_note": "Good one-click candidate. Lighter than Gitea, smaller ecosystem.",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

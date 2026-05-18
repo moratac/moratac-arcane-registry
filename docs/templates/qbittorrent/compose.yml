@@ -1,0 +1,20 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/qbittorrent.svg
+
+services:
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${QBITTORRENT_PORT_1:-8083}:8083"
+      - "${QBITTORRENT_PORT_2:-6881}:6881"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - qbittorrent-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  qbittorrent-config:

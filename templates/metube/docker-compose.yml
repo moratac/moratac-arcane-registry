@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/metube.svg
+
+services:
+  metube:
+    image: ghcr.io/alexta69/metube:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${METUBE_PORT_1:-8084}:8084"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - metube-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  metube-config:

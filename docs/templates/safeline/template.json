@@ -1,0 +1,26 @@
+{
+  "id": "safeline",
+  "name": "Safeline WAF",
+  "description": "Web application firewall stack. Review official multi-service compose before production.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Security & Identity",
+  "target_vm": "VM101",
+  "tags": [
+    "waf",
+    "security",
+    "reverse-proxy"
+  ],
+  "ports": [
+    "9445"
+  ],
+  "image": "chaitin/safeline-mgt:latest",
+  "maturity": "review",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

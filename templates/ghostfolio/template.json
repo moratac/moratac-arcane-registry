@@ -1,0 +1,25 @@
+{
+  "id": "ghostfolio",
+  "name": "Ghostfolio",
+  "description": "Personal finance dashboard. Requires database/Redis for production.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Business & Finance",
+  "target_vm": "VM104",
+  "tags": [
+    "finance",
+    "portfolio"
+  ],
+  "ports": [
+    "3333"
+  ],
+  "image": "ghostfolio/ghostfolio:latest",
+  "maturity": "review",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

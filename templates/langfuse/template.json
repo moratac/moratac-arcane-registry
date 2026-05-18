@@ -1,0 +1,26 @@
+{
+  "id": "langfuse",
+  "name": "Langfuse",
+  "description": "LLM observability. Production stack requires supporting services.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Search & RAG",
+  "target_vm": "VM103",
+  "tags": [
+    "llmops",
+    "observability",
+    "ai"
+  ],
+  "ports": [
+    "3004"
+  ],
+  "image": "langfuse/langfuse:latest",
+  "maturity": "review",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

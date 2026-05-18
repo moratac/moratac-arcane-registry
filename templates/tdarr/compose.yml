@@ -1,0 +1,29 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/tdarr.svg
+
+services:
+  tdarr:
+    image: ghcr.io/haveagitgat/tdarr:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${TDARR_PORT_1:-8265}:8265"
+      - "${TDARR_PORT_2:-8266}:8266"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      serverIP: ${TDARR_SERVER_IP:-0.0.0.0}
+      serverPort: ${TDARR_PORT_1:-8265}
+      webUIPort: ${TDARR_PORT_2:-8266}
+    volumes:
+      - tdarr-server:/app/server
+      - tdarr-configs:/app/configs
+      - tdarr-logs:/app/logs
+      - ${MEDIA_PATH:-./media}:/media
+      - ${TRANSCODE_CACHE_PATH:-./transcode_cache}:/temp
+
+volumes:
+  tdarr-server:
+  tdarr-configs:
+  tdarr-logs:

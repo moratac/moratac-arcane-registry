@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/grocy.svg
+
+services:
+  grocy:
+    image: lscr.io/linuxserver/grocy:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${GROCY_PORT_1:-9283}:9283"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - grocy-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  grocy-config:

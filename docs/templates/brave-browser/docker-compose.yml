@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/brave-browser.svg
+
+services:
+  brave-browser:
+    image: lscr.io/linuxserver/brave:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${BRAVE_BROWSER_PORT_1:-3006}:3006"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - brave-browser-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  brave-browser-config:

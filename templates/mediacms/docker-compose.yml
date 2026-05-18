@@ -1,0 +1,18 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/mediacms.svg
+
+services:
+  mediacms:
+    image: mediacms/mediacms:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${MEDIACMS_PORT_1:-8089}:8089"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - mediacms-config:/config
+      - ${MEDIA_PATH:-./media}:/media
+
+volumes:
+  mediacms-config:

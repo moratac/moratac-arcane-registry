@@ -1,0 +1,25 @@
+{
+  "id": "homarr",
+  "name": "Homarr",
+  "description": "Dashboard for homelab services.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Dashboard",
+  "target_vm": "VM101",
+  "tags": [
+    "dashboard",
+    "homelab"
+  ],
+  "ports": [
+    "7575"
+  ],
+  "image": "ghcr.io/homarr-labs/homarr:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": true,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

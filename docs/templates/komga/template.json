@@ -1,0 +1,26 @@
+{
+  "id": "komga",
+  "name": "Komga",
+  "description": "Comics and manga server.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Media",
+  "target_vm": "VM102",
+  "tags": [
+    "comics",
+    "manga",
+    "media"
+  ],
+  "ports": [
+    "25600"
+  ],
+  "image": "gotson/komga:latest",
+  "maturity": "ready",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/2fauth.svg
+
+services:
+  2fauth:
+    image: 2fauth/2fauth:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${2FAUTH_PORT_1:-8001}:8001"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - 2fauth-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  2fauth-config:

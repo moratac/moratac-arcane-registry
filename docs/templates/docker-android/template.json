@@ -1,0 +1,17 @@
+{
+  "name": "Docker Android",
+  "description": "Android emulator in Docker. Replaces Redroid template.",
+  "version": "2.1.1",
+  "author": "moratac",
+  "tags": [
+    "android",
+    "emulator",
+    "remote"
+  ],
+  "category": "Developer Tools",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

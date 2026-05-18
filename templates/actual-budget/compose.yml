@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/actual-budget.svg
+
+services:
+  actual-budget:
+    image: actualbudget/actual-server:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${ACTUAL_BUDGET_PORT_1:-5006}:5006"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - actual-budget-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  actual-budget-config:

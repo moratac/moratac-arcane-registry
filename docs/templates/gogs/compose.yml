@@ -1,0 +1,16 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/gogs.svg
+
+services:
+  gogs:
+    image: gogs/gogs:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${GOGS_HTTP_PORT:-3000}:3000"
+      - "${GOGS_SSH_PORT:-2222}:22"
+    volumes:
+      - gogs-data:/data
+
+volumes:
+  gogs-data:

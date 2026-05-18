@@ -1,0 +1,26 @@
+{
+  "id": "arcane-agent",
+  "name": "Arcane Agent",
+  "description": "Arcane remote Docker host agent. Verify official pairing flow.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "category": "Platform",
+  "target_vm": "All Docker VMs",
+  "tags": [
+    "docker",
+    "agent",
+    "control-plane"
+  ],
+  "ports": [
+    "3553"
+  ],
+  "image": "ghcr.io/getarcaneapp/arcane-agent:latest",
+  "maturity": "review",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

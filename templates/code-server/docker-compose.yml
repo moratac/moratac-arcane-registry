@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/code-server.svg
+
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${CODE_SERVER_PORT_1:-8444}:8444"
+    environment:
+      TZ: ${TZ:-UTC}
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+    volumes:
+      - code-server-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  code-server-config:

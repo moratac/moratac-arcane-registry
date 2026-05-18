@@ -1,0 +1,19 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/moviepilot-v2.svg
+
+# IMPORTANT: Starter template for MoviePilot v2.
+# Review official production compose before deploying.
+services:
+  moviepilot-v2:
+    image: jxxghp/moviepilot-v2:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${MOVIEPILOT_V2_PORT_1:-3000}:3000"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - moviepilot-v2-data:/data
+    # May require DB/Redis/KVM/GPU/privileged mode or external client setup.
+volumes:
+  moviepilot-v2-data:

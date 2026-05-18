@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/baidunetdisk.svg
+
+services:
+  baidunetdisk:
+    image: jlesage/baidunetdisk:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${BAIDUNETDISK_PORT_1:-5800}:5800"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - baidunetdisk-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  baidunetdisk-config:

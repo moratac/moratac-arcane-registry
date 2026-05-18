@@ -1,0 +1,17 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/gramps-web.svg
+
+services:
+  gramps-web:
+    image: ghcr.io/gramps-project/grampsweb:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${GRAMPS_WEB_PORT_1:-5000}:5000"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - gramps-web-config:/config
+      - ${DATA_PATH:-./data}:/data
+volumes:
+  gramps-web-config:

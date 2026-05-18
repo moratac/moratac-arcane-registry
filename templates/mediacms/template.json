@@ -1,0 +1,28 @@
+{
+  "id": "mediacms",
+  "name": "MediaCMS",
+  "category": "Media",
+  "target_vm": "VM102",
+  "ports": [
+    "8089"
+  ],
+  "image": "mediacms/mediacms:latest",
+  "description": "Self-hosted video CMS, like a private YouTube for personal, family, learning, or dataset videos.",
+  "tags": [
+    "video",
+    "cms",
+    "youtube-like",
+    "media"
+  ],
+  "maturity": "review",
+  "complexity_note": "Production deployment may need Postgres, Redis, workers, and transcoding tuning.",
+  "version": "2.1.1",
+  "author": "Moratac Arcane Registry",
+  "updated_at": "2026-05-17T16:14:49Z",
+  "note": "Extended metadata only. registry.json mimics official Arcane live registry.",
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ]
+}

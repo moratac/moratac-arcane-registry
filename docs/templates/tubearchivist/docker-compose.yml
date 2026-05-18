@@ -1,0 +1,25 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/tubearchivist.svg
+
+# Starter single-service entry for TubeArchivist.
+# Production usually needs companion services such as Redis and Elasticsearch.
+services:
+  tubearchivist:
+    image: bbilly1/tubearchivist:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${TUBEARCHIVIST_PORT_1:-8000}:8000"
+    environment:
+      TZ: ${TZ:-UTC}
+      ES_URL: ${ES_URL:-http://elasticsearch:9200}
+      REDIS_CON: ${REDIS_CON:-redis://redis:6379}
+      TA_HOST: ${TA_HOST:-localhost}
+      TA_USERNAME: ${TA_USERNAME:-admin}
+      TA_PASSWORD: ${TA_PASSWORD:-CHANGE_ME}
+    volumes:
+      - tubearchivist-cache:/cache
+      - ${MEDIA_PATH:-./media}:/youtube
+
+volumes:
+  tubearchivist-cache:
