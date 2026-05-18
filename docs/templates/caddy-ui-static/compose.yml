@@ -1,0 +1,21 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/caddy-ui-static.svg
+
+services:
+  caddy-ui-static:
+    image: nginx:alpine
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - "${CADDY_UI_STATIC_PORT:-9888}:80"
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ${DATA_PATH:-./data}/html:/usr/share/nginx/html:ro
+    networks:
+      moratac:
+
+networks:
+  moratac:
+    external: true
+    name: moratac-network

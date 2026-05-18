@@ -235,3 +235,15 @@ https://moratac.github.io/moratac-arcane-registry/registry.json
 
 MIT
 \n## Notes\n\n- Authentik is pinned to a stable patch version. Update `AUTHENTIK_VERSION` manually, then Pull → Redeploy.\n- Caddy Server Stack is experimental. Do not expose Caddy Admin API port 2019 publicly.\n
+
+## Caddy UI Templates
+
+### Caddy UI Zackwag
+
+Experimental Caddy UI with frontend and backend. It is intended to manage an existing Caddy Server through Caddy Admin API.
+
+### Caddy UI Static
+
+Experimental pure static SPA for Caddy Admin API. Best used behind Caddy with HTTPS and BasicAuth.
+
+Production note: keep Caddy Admin API private. Do not expose port 2019 publicly.

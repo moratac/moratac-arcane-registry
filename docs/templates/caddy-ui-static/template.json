@@ -1,0 +1,21 @@
+{
+  "id": "caddy-ui-static",
+  "name": "Caddy UI Static",
+  "description": "Pure static Caddy Admin API UI. Experimental; best served behind Caddy with HTTPS and BasicAuth.",
+  "category": "Networking & Reverse Proxy",
+  "version": "2.1.5",
+  "author": "moratac",
+  "tags": [
+    "networking",
+    "reverse-proxy",
+    "caddy",
+    "static",
+    "experimental"
+  ],
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "source": "https://github.com/yuanshanhua/caddy-ui"
+}\n

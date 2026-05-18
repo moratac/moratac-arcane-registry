@@ -2,7 +2,7 @@
   "$schema": "https://registry.getarcane.app/schema.json",
   "name": "Moratac Arcane Registry",
   "description": "Curated Docker Compose templates for Arcane.",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "author": "moratac",
   "url": "https://github.com/moratac/moratac-arcane-registry",
   "templates": [
@@ -276,6 +276,42 @@
         "networking",
         "reverse-proxy",
         "caddy",
+        "experimental"
+      ]
+    },
+    {
+      "id": "caddy-ui-static",
+      "name": "Caddy UI Static",
+      "description": "Pure static Caddy Admin API UI. Experimental; best served behind Caddy with HTTPS and BasicAuth.",
+      "version": "2.1.5",
+      "author": "moratac",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy-ui-static/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy-ui-static/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/caddy-ui-static",
+      "content_hash": "b8cd72b67c9013fb74d6986cca6c68cd92e82464ae41dd2a4a24272c0ff35cd2",
+      "tags": [
+        "networking",
+        "reverse-proxy",
+        "caddy",
+        "static",
+        "experimental"
+      ]
+    },
+    {
+      "id": "caddy-ui-zackwag",
+      "name": "Caddy UI Zackwag",
+      "description": "Modern Caddy UI with frontend and backend. Experimental; use with caution.",
+      "version": "2.1.5",
+      "author": "moratac",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy-ui-zackwag/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy-ui-zackwag/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/caddy-ui-zackwag",
+      "content_hash": "73597d083c96cb5ca212e8eec717e2b30eaee2ab427f8034f2b2147e847aff88",
+      "tags": [
+        "networking",
+        "reverse-proxy",
+        "caddy",
+        "ui",
         "experimental"
       ]
     },
@@ -1535,4 +1571,4 @@
       ]
     }
   ]
-}
+}\n

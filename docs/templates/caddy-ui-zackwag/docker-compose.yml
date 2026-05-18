@@ -1,0 +1,42 @@
+x-arcane:
+  icon: https://moratac.github.io/moratac-arcane-registry/icons/caddy-ui-zackwag.svg
+
+services:
+  backend:
+    image: zackwag/caddy-ui-backend:latest
+    pull_policy: always
+    restart: unless-stopped
+    environment:
+      TZ: ${TZ:-UTC}
+      PORT: 3001
+      CADDY_ADMIN_URL: ${CADDY_ADMIN_URL:-http://caddy-server:2019}
+      CADDY_CONFIG_PATH: /etc/caddy/Caddyfile
+      CADDY_DATA_PATH: /data/caddy/caddy
+      CADDY_LOG_PATH: /var/log/caddy/access.log
+      CADDY_SERVER_NAME: ${CADDY_SERVER_NAME:-srv0}
+      CADDY_UI_USER: ${CADDY_UI_USER:-admin}
+      CADDY_UI_PASSWORD: ${CADDY_UI_PASSWORD:-CHANGE_ME}
+      JWT_SECRET: ${JWT_SECRET}
+    volumes:
+      - ${CADDY_HOST_DATA_PATH:-/opt/caddy-server/data}/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ${CADDY_HOST_DATA_PATH:-/opt/caddy-server/data}/caddy-data:/data/caddy
+      - ${CADDY_HOST_DATA_PATH:-/opt/caddy-server/data}/logs:/var/log/caddy
+      - ${DATA_PATH:-./data}/caddy-ui:/etc/caddy-ui
+    networks:
+      moratac:
+
+  frontend:
+    image: zackwag/caddy-ui-frontend:latest
+    pull_policy: always
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "${CADDY_UI_PORT:-9877}:80"
+    networks:
+      moratac:
+
+networks:
+  moratac:
+    external: true
+    name: moratac-network

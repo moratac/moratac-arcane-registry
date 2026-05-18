@@ -1,0 +1,21 @@
+{
+  "id": "caddy-ui-zackwag",
+  "name": "Caddy UI Zackwag",
+  "description": "Modern Caddy UI with frontend and backend. Experimental; use with caution.",
+  "category": "Networking & Reverse Proxy",
+  "version": "2.1.5",
+  "author": "moratac",
+  "tags": [
+    "networking",
+    "reverse-proxy",
+    "caddy",
+    "ui",
+    "experimental"
+  ],
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "source": "https://github.com/zackwag/caddy-ui"
+}\n

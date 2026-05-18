@@ -1,0 +1,1 @@
+# Caddy UI Static\n\nPure static Caddy Admin API UI. Experimental; best served behind Caddy with HTTPS and BasicAuth.\n\nSource: https://github.com/yuanshanhua/caddy-ui\n

@@ -1,0 +1,1 @@
+# Caddy UI Zackwag\n\nModern Caddy UI with frontend and backend. Experimental; use with caution.\n\nSource: https://github.com/zackwag/caddy-ui\n
