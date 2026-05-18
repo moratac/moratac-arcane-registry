@@ -13,7 +13,7 @@ services:
     volumes:
       - authentik-db:/var/lib/postgresql/data
   authentik-server:
-    image: ghcr.io/goauthentik/server:${AUTHENTIK_VERSION:-2026.2.2}
+    image: ghcr.io/goauthentik/server:${AUTHENTIK_VERSION:-2026.2}
     pull_policy: always
     command: server
     restart: unless-stopped
@@ -32,7 +32,7 @@ services:
       - authentik-media:/media
       - authentik-templates:/templates
   authentik-worker:
-    image: ghcr.io/goauthentik/server:${AUTHENTIK_VERSION:-2026.2.2}
+    image: ghcr.io/goauthentik/server:${AUTHENTIK_VERSION:-2026.2}
     pull_policy: always
     command: worker
     restart: unless-stopped

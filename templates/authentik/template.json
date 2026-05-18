@@ -2,7 +2,7 @@
   "id": "authentik",
   "name": "Authentik",
   "description": "Identity provider and SSO platform.",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "author": "Moratac Arcane Registry",
   "category": "Security & Identity",
   "target_vm": "VM101",

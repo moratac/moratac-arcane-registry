@@ -2,7 +2,7 @@
   "$schema": "https://registry.getarcane.app/schema.json",
   "name": "Moratac Arcane Registry",
   "description": "Curated Docker Compose templates for Arcane.",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "author": "moratac",
   "url": "https://github.com/moratac/moratac-arcane-registry",
   "templates": [
@@ -137,7 +137,7 @@
       "id": "authentik",
       "name": "Authentik",
       "description": "Identity provider and SSO platform.",
-      "version": "2.1.1",
+      "version": "2.1.2",
       "author": "Moratac Arcane Registry",
       "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/authentik/compose.yml",
       "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/authentik/.env.example",
