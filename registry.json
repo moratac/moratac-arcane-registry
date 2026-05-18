@@ -263,6 +263,23 @@
       ]
     },
     {
+      "id": "caddy-server-stack",
+      "name": "Caddy Server Stack",
+      "description": "Caddy Server + Caddy Manager. Experimental, use with caution.",
+      "version": "2.1.4",
+      "author": "moratac",
+      "compose_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy-server-stack/compose.yml",
+      "env_url": "https://moratac.github.io/moratac-arcane-registry/templates/caddy-server-stack/.env.example",
+      "documentation_url": "https://github.com/moratac/moratac-arcane-registry/tree/main/templates/caddy-server-stack",
+      "content_hash": "89eff2696262ec3317aa327596e2e21f257ed1f8cb672261fb9a2da2bd5c9104",
+      "tags": [
+        "networking",
+        "reverse-proxy",
+        "caddy",
+        "experimental"
+      ]
+    },
+    {
       "id": "chrome-browser",
       "name": "Chrome Browser",
       "description": "Browser in container. Chromium image used as Chrome-compatible option.",

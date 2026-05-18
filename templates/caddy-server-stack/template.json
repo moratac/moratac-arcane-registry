@@ -1,0 +1,20 @@
+{
+  "id": "caddy-server-stack",
+  "name": "Caddy Server Stack",
+  "description": "Caddy Server + Caddy Manager. Experimental, use with caution.",
+  "category": "Networking & Reverse Proxy",
+  "version": "2.1.4",
+  "author": "moratac",
+  "tags": [
+    "networking",
+    "reverse-proxy",
+    "caddy",
+    "experimental"
+  ],
+  "featured": false,
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "source": "https://caddyserver.com/docs/"
+}
