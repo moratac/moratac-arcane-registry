@@ -2,7 +2,7 @@
   "id": "caddy",
   "name": "Caddy Server",
   "description": "Caddy web server and reverse proxy.",
-  "version": "2.1.1",
+  "version": "2.1.4",
   "author": "Moratac Arcane Registry",
   "category": "Networking & Reverse Proxy",
   "target_vm": "VM101",
